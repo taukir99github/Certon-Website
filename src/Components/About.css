@@ -76,20 +76,20 @@
   font-weight: 300;
 }
 .service-container-lower-card {
-  width: 100%;
+  width: 70%;
   display: flex;
-  gap: 1rem;
+  gap: 1.3rem;
   align-items: center;
   justify-content: center;
   padding-bottom: 6rem;
   margin-top: 3rem;
 }
 .card-design {
-  width: 250px;
-  height: 400px;
-  background-color: #b5b5b5;
+  width: 190px;
+  height: 270px;
   border-radius: 7px;
   padding: 0px 10px;
+  background-color: #183865;
 }
 
 .service-container-lower-card-1 {
@@ -99,27 +99,30 @@
   background-repeat: no-repeat;
   object-fit: cover;
 }
-
+.first-card{
+  background-image: url("../Images/card2.svg");
+}
 .service-container-lower-card-2 {
-  background-image: url("../Images/Rectangle 3.jpg");
+  background-image: url("../Images/card2.svg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   object-fit: cover;
 }
 .service-container-lower-card-3 {
-  background-image: url("../Images/Rectangle 4.jpg");
+  background-image: url("../Images/card3.svg");
   background-position: center;
   background-size: cover;
   object-fit: cover;
 }
 .service-container-lower-card-4 {
-  background-image: url("../Images/Rectangle 6.jpg");
+  background-image: url("../Images/card4.svg");
   background-position: center;
   background-size: cover;
   object-fit: cover;
 }
 .service-container-lower-card-5 {
-  background-image: url("../Images/Rectangle 5.jpg");
+  background-image: url("../Images/card5.svg");
   background-position: center;
   background-size: cover;
   object-fit: cover;
@@ -141,7 +144,7 @@
 }
 
 .service-container-lower-pt-2-small-card {
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,35 +180,39 @@
   margin-top: 1rem;
 }
 .service-container-lower-pt-3 {
-  width: 100%;
+  /* width: 100%; */
   height: 80vh;
   display: flex;
   align-items: center;
-  background-color: black;
-  position: relative;
-}
-
-.service-container-lower-pt-3-image {
-  width: 100%;
+  /* background-color: black; */
   background-image: url("../../src/Images/Building.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.service-container-lower-pt-3-image {
+  /* width: 100%; */
+  
+  background: linear-gradient(89.85deg, #000000 0.13%, #1D1D1D 20.32%, #2D2D2D 31.2%, #404040 43.63%, rgba(45, 45, 45, 0.703704) 60.2%, rgba(27, 27, 27, 0.425926) 75.74%, rgba(15, 15, 15, 0.231482) 86.62%, rgba(0, 0, 0, 0) 99.56%);
+
   height: 80vh;
   opacity: 0.5;
   display: flex;
   align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .service-container-lower-pt-3-image img {
   width: 100%;
 }
 .service-container-lower-pt-3-text {
-  width: 100%;
-  display: flex;
+  width: 50%;
   flex-direction: column;
   align-items: center;
   display: flex;
-  padding: 25rem;
+  text-align: center;
 }
 .service-container-lower-pt-3-text p {
   color: white;
@@ -250,7 +257,7 @@
     margin-top: 2rem;
   }
 
-  .service-container-lower-card-1 {
+  .card-design {
     width: 90%;
   }
 
@@ -269,7 +276,7 @@
   }
 
   .service-container-lower-pt-3-text {
-    padding: 5rem;
+    width: 80%;
   }
 
   .service-container-button button {
