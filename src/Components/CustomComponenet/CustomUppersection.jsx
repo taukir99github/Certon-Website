@@ -1,6 +1,6 @@
 import React from "react";
 import "./CustomUppersection.css";
-import { Reveal } from "react-reveal";
+// import { Reveal } from "react-reveal";
 
 const CustomUppersection = ({ title, image }) => {
   return (
