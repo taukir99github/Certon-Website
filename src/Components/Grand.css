@@ -1,0 +1,25 @@
+.top-image-3 {
+  background-image: url("../../src/Images/GrandBackground.svg");
+}
+.Grand-image {
+  background-image: url("../../src/Images/GrandLogo.svg");
+  height: 178px !important;
+  width: 370px !important;
+  margin-top: 4rem;
+}
+.Grandcard1 {
+    background-image: url("../Images/Grandcard1.svg");
+  }
+  .Grandcard2 {
+    background-image: url("../Images/Grandcard2.svg");
+  }
+  .Grandcard3 {
+    background-image: url("../Images/Grandcard3.svg");
+  }
+  .Grandcard4 {
+    background-image: url("../Images/Grandcard4.svg");
+  }
+  .Grandcard5 {
+    background-image: url("../Images/Grandcard5.svg");
+  }
+

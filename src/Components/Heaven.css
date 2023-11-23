@@ -1,0 +1,23 @@
+.top-image-4 {
+  background-image: url("../../src/Images/HeavenBackground.svg");
+}
+.Heaven-image {
+  background-image: url("../../src/Images/HeavenLogo.svg");
+  height: 235px !important;
+  width: 235px !important;
+  margin-top: 4rem;
+}
+
+.Heavencard1 {
+    background-image: url("../Images/Heavencard1.svg");
+  }
+  .Heavencard2 {
+    background-image: url("../Images/Heavencard2.svg");
+  }
+  .Heavencard3 {
+    background-image: url("../Images/Heavencard3.svg");
+  }
+  .Heavencard4 {
+    background-image: url("../Images/Heavencard4.svg");
+  }
+ 

@@ -1,0 +1,23 @@
+.top-image-2 {
+  background-image: url("../../src/Images/background.svg");
+}
+.FranchiseTank-hero-image {
+  background-image: url("../../src/Images/FranchiseLogo.svg");
+  height: 300px !important;
+  width: 370px !important;
+}
+.FranchiseCard1 {
+  background-image: url("../Images/FranchiseCard1.svg");
+}
+.FranchiseCard2 {
+  background-image: url("../Images/FranchiseCard2.svg");
+}
+.FranchiseCard3 {
+  background-image: url("../Images/FranchiseCard3.svg");
+}
+.FranchiseCard4 {
+  background-image: url("../Images/FranchiseCard4.svg");
+}
+.lower-image{
+  
+}
