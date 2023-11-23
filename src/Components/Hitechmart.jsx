@@ -1,11 +1,11 @@
 import React from "react";
 import "./Hitechmart.css";
-
 import CustomeService from "./CustomComponenet/CustomService";
 import CustomUppersection from "./CustomComponenet/CustomUppersection";
 import CustomHeroSection from "./CustomComponenet/CustomHeroSection";
 import CustomContainerlower from "./CustomComponenet/CustomContainerlower";
 import CustomLowerPart from "./CustomComponenet/CustomLowerPart";
+import Hitech from "../Images/Hitech.svg"
 
 const About = () => {
   return (
@@ -16,6 +16,7 @@ const About = () => {
       />
       <CustomHeroSection
         image={"heroSection_logo"}
+        // icon={<img src={Hitech}/>}
         title={"Hitech Mart"}
         p={`HiTec Mart is a wholesale B2B marketplace in India that offers a
       bulk supply of different categories of various garments and

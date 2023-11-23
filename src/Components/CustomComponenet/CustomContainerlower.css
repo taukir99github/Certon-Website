@@ -15,7 +15,7 @@
   justify-content: center;
 }
 .star-star img {
-  width: 40% !important;
+  width: 60px!important;
 }
 @media (max-width: 768px) {
   .image-container-text {

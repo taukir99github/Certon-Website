@@ -56,10 +56,7 @@
     padding: 2rem;
   }
 
-  .Exports-image {
-    width: 80% !important;
-    height: auto !important;
-  }
+ 
 }
 
 @media (max-width: 576px) {
