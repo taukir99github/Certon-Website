@@ -6,7 +6,6 @@ import star2 from "../Images/star2.svg";
 import star3 from "../Images/star3.svg";
 import star4 from "../Images/star4.svg";
 import star5 from "../Images/star5.svg";
-// import star from "../../src/Assests/Star.svg";
 
 const About = () => {
   return (
