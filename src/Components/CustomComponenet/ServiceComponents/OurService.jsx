@@ -1,17 +1,23 @@
 import React from "react";
 import "./OurService.css";
 import ServiceImage from "../../../Images/ServiceLogo.svg";
+import Zoom from "react-reveal/Zoom";
+import Bounce from 'react-reveal/Bounce';
 const OurService = ({ image, title, p }) => {
   return (
     <div className="service">
       <div className="our-services-main">
         <div className="our-services-main-image">
+          <Bounce Top>
           {/* <img src={ServiceImage} alt="" /> */}
           {image}
+          </Bounce>
         </div>
         <div className="our-services-main-header">
           {/* <div>Software Development</div> */}
+          <Bounce Top>
           <div>{title}</div>
+          </Bounce>
         </div>
         <div className="our-services-main-para">
           {/* <div>
@@ -22,7 +28,9 @@ const OurService = ({ image, title, p }) => {
             to enrich your business..
           </div> */}
           <div>
+          <Bounce Top>
             {p}
+            </Bounce>
           </div>
         </div>
       </div>

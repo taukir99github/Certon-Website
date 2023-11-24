@@ -69,6 +69,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 7rem;
+  text-align: center;
 }
 .service-container-lower-h1 h1 {
   color: white;
@@ -158,6 +159,7 @@
 }
 .service-container-lower-pt-2-h1 {
   padding: 60px 0px;
+  text-align: center;
 }
 .service-container-lower-pt-2-h1 h1 {
   color: #183865;
@@ -247,6 +249,7 @@
   align-items: center;
   display: flex;
   text-align: center;
+  gap: 1rem;
 }
 .service-container-lower-pt-3-text p {
   color: white;

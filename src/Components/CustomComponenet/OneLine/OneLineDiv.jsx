@@ -1,7 +1,7 @@
 import React from 'react'
 import "./OneLineDiv.css"
 
- const OneLineDiv = () => {
+ const OneLineDiv = ({title}) => {
   return (
     <div className='div-text'>
         <div className="oneline-text">

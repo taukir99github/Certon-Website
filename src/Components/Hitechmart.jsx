@@ -6,11 +6,13 @@ import CustomHeroSection from "./CustomComponenet/CustomHeroSection";
 import CustomContainerlower from "./CustomComponenet/CustomContainerlower";
 import CustomLowerPart from "./CustomComponenet/CustomLowerPart";
 import Hitech from "../Images/Hitech.svg"
+import Zoom from 'react-reveal/Zoom';
 
 const About = () => {
   return (
     <div style={{ overflow: "hidden" }}>
       <CustomUppersection
+      
         title={"Quality, Service & Diversity are Assured"}
         image={"top-image"}
       />
@@ -41,11 +43,11 @@ const About = () => {
       <CustomContainerlower
         title={"Why Hitech Mart ?"}
         imageText={[
+          "Driving business growth and expansion",
           "Offer a wide range of product categories",
-          "Offer a wide range of product categories",
-          "Offer a wide range of product categories",
-          "Offer a wide range of product categories",
-          "Offer a wide range of product categories",
+          "Quality and trust",
+          "Complete support and assistance",
+          "Quick doorstep delivery",
         ]}
       />
 
