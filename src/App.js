@@ -24,10 +24,11 @@ import Email from "./Pages/E-mailMarketing/Email";
 import CustomLowerPart from "./Components/CustomComponenet/CustomLowerPart";
 
 
+
 const App = () => {
   return (
     <div>
-      {/* <Hitechmart /> */}
+      <Hitechmart />
       {/* <FranchiseTank /> */}
       {/* <Grand /> */}
       {/* <Heaven /> */}
@@ -48,7 +49,7 @@ const App = () => {
       {/* <SearchEngine/> */}
       {/* <Pay/> */}
       {/* <Media/> */}
-      <Email/>
+      {/* <Email/> */}
      
     </div>
   );

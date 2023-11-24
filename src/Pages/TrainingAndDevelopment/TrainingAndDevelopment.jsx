@@ -34,6 +34,7 @@ const TrainingAndDevelopment = () => {
       />
         <CustomLowerPart
         image={"lower-image"}
+        hidebutton={true}
         title={"We Guide You Properly "}
         p={`
         Our professional training covers all the areas including technical skill development, soft skill development, leadership skill development, etc. Overall, this training and development program improves organizational growth.

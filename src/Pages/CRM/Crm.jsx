@@ -34,6 +34,7 @@ const Crm = () => {
       />
        <CustomLowerPart
         image={"lower-image"}
+        hidebutton={true}
         title={"We Connect You with Your Customers"}
         p={`
         At Certon, we understand the importance of an effective CRM system. Our system is designed to deliver the best services to our clients and it helps them to maintain their customers in the long term.        `}

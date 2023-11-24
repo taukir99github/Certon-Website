@@ -19,6 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .service-container-hero-text p {
   padding: 28px 211px;

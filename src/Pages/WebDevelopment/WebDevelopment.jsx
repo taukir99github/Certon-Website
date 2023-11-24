@@ -35,6 +35,7 @@ const WebDevelopment = () => {
 
       <CustomLowerPart
         image={"lower-image"}
+        hidebutton={true}
         title={"Experience Hassle-Free Websites"}
         p={`As a top web development company in Bangalore, we emphasize user experience(UX) and user interface(UI) design to develop an appealing and seamless website experience.`}
       />

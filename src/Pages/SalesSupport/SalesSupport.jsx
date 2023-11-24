@@ -34,6 +34,7 @@ const SalesSupport = () => {
 
 <CustomLowerPart
         image={"lower-image"}
+        hidebutton={true}
         title={"We Show You How to Sell"}
         p={`
         Organizational success highly depends on the number of sales made. There are several factors to convert marketing into sales. Our experts know how to convert it effectively with minimal cost.  `}

@@ -33,6 +33,7 @@ const Branding = () => {
 
 <CustomLowerPart
         image={"lower-image"}
+        hidebutton={true}
         title={"We Know How to Brand Your Business "}
         p={`
         We design strategies for brands based on the service and the targeted audience they are focused on. This helps them to build a strong foundation for long-term success.        `}
