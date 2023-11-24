@@ -36,6 +36,7 @@ const Media = () => {
 
 <CustomLowerPart
         image={"lower-image"}
+        hidebutton={true}
         title={"Move with Social Media Trends"}
         p={`
 

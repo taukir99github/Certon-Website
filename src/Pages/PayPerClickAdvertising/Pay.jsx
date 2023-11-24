@@ -33,6 +33,7 @@ const Pay = () => {
       />
         <CustomLowerPart
         image={"lower-image"}
+        hidebutton={true}
         title={"Only an Expert Knows How to Generate Quality Leads"}
         p={`
 

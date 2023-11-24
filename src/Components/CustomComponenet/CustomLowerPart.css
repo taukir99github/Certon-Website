@@ -16,19 +16,12 @@
 
   background: linear-gradient(
     89.85deg,
-    #000000 0.13%,
-    #1d1d1d 20.32%,
-    #2d2d2d 31.2%,
-    #404040 43.63%,
     rgba(45, 45, 45, 0.703704) 60.2%,
     rgba(27, 27, 27, 0.425926) 75.74%,
     rgba(15, 15, 15, 0.231482) 86.62%,
     rgba(0, 0, 0, 0) 99.56%
   );
-
   height: 80vh;
-  opacity: 0.5;
-  display: flex;
   align-items: center;
   display: flex;
   justify-content: center;

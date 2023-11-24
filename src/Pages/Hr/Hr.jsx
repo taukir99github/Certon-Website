@@ -34,6 +34,7 @@ const Hr = () => {
 
       <CustomLowerPart
         image={"lower-image"}
+        hidebutton={true}
         title={"Right Candidates Shape Your Organizations"}
         p={`Certon helps organizations to find the right candidates according to their requirements. If you want to maintain your company standards through your workforce, we are here to support you to identify the best.
         `}

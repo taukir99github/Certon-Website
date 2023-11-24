@@ -12,7 +12,7 @@ const Exports = () => {
     <div style={{overflow:"hidden"}}>
       <CustomUppersection
         title={" Experience Our Global Import-Export Services"}
-        image={"top-image-4"}
+        image={"top-image-5"}
       />
       <CustomHeroSection
         image={"Exports-image"}

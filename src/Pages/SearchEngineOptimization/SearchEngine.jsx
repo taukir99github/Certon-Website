@@ -33,6 +33,7 @@ const SearchEngine = () => {
       />
        <CustomLowerPart
         image={"lower-image"}
+        hidebutton={true}
         title={"Rank Your Websites on the Top"}
         p={`
 

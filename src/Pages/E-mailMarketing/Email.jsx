@@ -33,6 +33,7 @@ const Email = () => {
       />
       <CustomLowerPart
         image={"lower-image"}
+        hidebutton={true}
         title={"A Big Strategy for a Big Success"}
         p={`
 
