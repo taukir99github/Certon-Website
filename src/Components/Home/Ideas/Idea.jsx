@@ -5,24 +5,20 @@ import { BsBookmarks } from "react-icons/bs";
 import { FiUsers } from "react-icons/fi";
 import Fade from "react-reveal/Fade";
 import Slider from "react-slick";
-
-
-
+import "./idea.css";
 
 export const Idea = () => {
-
-     const settings = {
-       dots: false,
-       fade: true,
-       infinite: true,
-       speed: 500,
-       slidesToShow: 1,
-       slidesToScroll: 1,
-       autoplay:true,
-        nextArrow: <></>, // Set nextArrow to an empty component
+  const settings = {
+    dots: false,
+    fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    nextArrow: <></>, // Set nextArrow to an empty component
     prevArrow: <></>,
-     };
-
+  };
 
   return (
     <div className={styles.container}>

@@ -75,7 +75,7 @@ export const Home = () => {
     },
   ];
   return (
-    <div>
+    <div style={{ overflow: "hidden" }}>
       <div className={header.category1}>
         <Slider {...settings}>
           {cards.map((item) => (
@@ -88,17 +88,22 @@ export const Home = () => {
         </Slider>
         <Idea />
         <GlobalPg />
-        {/* <CustomLowerPart
-          title={"Experience a Global Touch"}
-          p={`   We use the latest technology available in the market and keep up with
-        industry advancements. As a top IT 
-        consulting and services company, we value our clients and serve
-        transparent and sustainable support and
-        assistance to maintain a long-term association with us.`}
-        image={"bckground-global"}
-        /> */}
+
         <ContentHome1 />
-        <WhoWeAre />
+        {/* <WhoWeAre /> */}
+        <CustomLowerPart
+          title={"Who We Are"}
+          p={`   Certon Technologies is one of the top IT consulting companies in
+          India, headquartered in Pune, and a corporate office in Bangalore. We
+          operate with high standards of refinement and advanced technology to
+          serve our clients in the best possible way.We, as a reputed IT
+          services company in Bangalore, offer other various services such as
+          HR, Sales & Marketing, and Digital Marketing. Our professional team is
+          skilled enough to serve you to achieve the best possible result to
+          flourish your business.`}
+          image={"bckground-global"}
+          button={"Join Now"}
+        />
         <Why />
         <ContentHome2 />
         <OurServiceHome />

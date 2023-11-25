@@ -11,7 +11,11 @@
 .image-container img {
   width: 100%;
 }
-
+.image-container-text h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  width: 57%;
+}
 .image-container-text {
   display: flex;
   gap: 0.8rem;

@@ -1,27 +1,28 @@
-.hea{
-    color: #183865;
+.hea {
+  color: #183865;
   text-align: center;
   margin-top: auto;
-  
+
   /* font-size: larger; */
   /* margin-top: 2rem; */
 }
-.bgss{
-       background-color: #5CE1E6;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    height: 350px;
-    top: 50%;
-flex-direction: column;
+.bgss {
+  background-color: #5ce1e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  top: 50%;
+  flex-direction: column;
 }
-.heading{
-    color:#183865;
-font-weight: bolder;
-font-size: 40px;
+.heading {
+  color: #183865;
+  font-weight: bolder;
+  font-size: 40px;
 }
-.content{
-    margin-top: 20px;
-    color: #183865;
-    letter-spacing: 2px;
+.content {
+  margin-top: 20px;
+  color: #183865;
+  letter-spacing: 2px;
+  text-align: center;
 }

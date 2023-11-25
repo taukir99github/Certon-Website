@@ -1,9 +1,17 @@
 .HomeTopBack1 {
   background-image: url("../../Images/HomeTopBack1.svg");
 }
+.HomeTopBack1 h1 {
+  font-size: 3.5rem !important;
+  width: 100% !important;
+}
 .HomeTopBack2 {
   background-image: url("../../Images/HomeTopBack2.svg");
 }
-.bckground-global{
-  background-image: url("../../img/service/experiecebg.png");
+.HomeTopBack2 h1 {
+  font-size: 3.5rem !important;
+  width: 65% !important;
+}
+.bckground-global {
+  background-image: url("../../img/service/Homebg3.jpg");
 }

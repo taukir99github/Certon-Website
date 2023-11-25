@@ -74,6 +74,8 @@
   width: 150px;
   border-radius: 30px;
   font-weight: bold;
+  outline: none;
+  border: none;
 }
 
 /* Style the button */

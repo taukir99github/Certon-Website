@@ -5,6 +5,7 @@ import Slide from "react-reveal/Slide";
 import { Link } from "react-router-dom";
 import { Fade } from "react-reveal";
 import navlogo from "../../Images/navlogo.png";
+import navnew from "../../Images/Navnew.svg";
 function Navbar() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -89,7 +90,7 @@ function Navbar() {
     <>
       <nav>
         <div className="nav-pt-1">
-          <img src={navlogo} alt="" />
+          <img src={navnew} alt="" />
         </div>
         <div className="nav-pt-2">
           <div>Home</div>

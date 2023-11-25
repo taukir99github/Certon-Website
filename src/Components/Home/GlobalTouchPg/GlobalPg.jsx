@@ -14,7 +14,7 @@ export const GlobalPg = () => {
         <h1 className={styles.heading}>Experience a Global Touch</h1>
       </Fade>
       <Fade bottom>
-        <p className={styles.content}>
+        <p className={styles.content1}>
           We use the latest technology available in the market and keep up with
           industry advancements. As a top IT <br />
           consulting and services company, we value our clients and serve

@@ -2,6 +2,7 @@ import React from "react";
 import idea from "./Whoweare.module.css";
 import Fade from "react-reveal/Fade";
 import Homebg3 from "../../../img/service/Homebg3.jpg"
+
 export const WhoWeAre = () => {
   return (
     <div className={idea["image-container"]}>
