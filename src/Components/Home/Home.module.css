@@ -1,0 +1,195 @@
+.category1 {
+  margin-top: 0px;
+  position: relative;
+}
+
+.category1 .box {
+  border-radius: 0;
+  text-align: center;
+}
+.category1 p {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+}
+.category1 img {
+  width: 100%;
+  height: 42rem;
+  object-fit: cover;
+}
+
+.category1 .box {
+  cursor: pointer;
+  position: relative;
+}
+.category1 .overlay {
+  position: absolute;
+  top: 80px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  color: #fff;
+}
+.category1 .overlay h4 {
+  font-weight: 500;
+  color: rgb(253, 246, 126);
+}
+.category1 .overlay p {
+  color: #fff;
+  font-weight: 300;
+  padding: 15px;
+}
+/* /---------------control-btn-------------/ */
+
+.control-btn button {
+  background: rgb(131, 137, 139);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  padding: 2px;
+}
+
+.control-btn .next {
+  position: absolute;
+  top: 40%;
+  right: 20px;
+  color: #fff;
+}
+
+.control-btn .prev {
+  position: absolute;
+  top: 40%;
+  left: 20px;
+  z-index: 99;
+  color: #fff !important;
+  transform: rotate(3.142rad);
+}
+.control-btn .icon {
+  font-size: 50px;
+  color: "white";
+}
+.container {
+  font-family: "Bold";
+}
+.imhhh {
+  height: 25rem;
+  width: 10rem;
+}
+.overlay-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-text {
+  color: white;
+  text-align: center;
+  font-weight: 800;
+  font-size: 58px;
+  white-space: nowrap;
+}
+.overlay-text1 {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+.overlay-button1 {
+  background-color: #5ce1e6;
+  color: white;
+  text-align: center;
+  border: none;
+  padding: 15px 32px;
+  border-radius: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 0rem;
+}
+.overlay-button2 {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+
+  border: 2px solid white;
+  border-radius: 1.5rem;
+
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 1rem;
+}
+.image-container {
+  position: relative;
+  /* display: inline-block; */
+  /* height: 100vh; */
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 600px) {
+  .category1 {
+    margin-top: 0px;
+    position: relative;
+  }
+  .image-container img {
+    width: 100%;
+    height: 30rem;
+  }
+  .overlay-button1 {
+    background-color: #5ce1e6;
+    color: white;
+    text-align: center;
+
+    border: none;
+
+    padding: 15px 32px;
+    border-radius: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 5rem;
+    margin-bottom: 0.2rem;
+  }
+  .overlay-button2 {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+
+    border: 2px solid white;
+    border-radius: 1.5rem;
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 5.5rem;
+  }
+  .overlay-text {
+    color: white;
+    text-align: center;
+    font-size: large;
+    /* white-space: nowrap; */
+  }
+  .overlay-text1 {
+    color: white;
+    text-align: center;
+    font-size: medium;
+  }
+}
+
+@font-face {
+  font-family: BOLD;
+  src: url("../../../Montserrat/static/Montserrat-ExtraBold.ttf");
+}
+.overlay-text {
+  font-family: BOLD;
+}

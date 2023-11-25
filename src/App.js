@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hitechmart from "./Components/Hitechmart";
 import FranchiseTank from "./Components/FranchiseTank";
 import Grand from "./Components/Grand";
@@ -22,35 +23,48 @@ import Pay from "./Pages/PayPerClickAdvertising/Pay";
 import Media from "./Pages/SocialMediaMarketing/Media";
 import Email from "./Pages/E-mailMarketing/Email";
 import CustomLowerPart from "./Components/CustomComponenet/CustomLowerPart";
-
-
+import Navbar from "./Components/Navbar/Navbar";
+import { Home } from "./Components/Home/Home";
+import {Footer} from "./Components/Footer/Footer"
 
 const App = () => {
   return (
     <div>
-      <Hitechmart />
-      {/* <FranchiseTank /> */}
-      {/* <Grand /> */}
-      {/* <Heaven /> */}
-      {/* <Exports/> */}
-      {/* <OurService/> */}
-      {/* <OneLineDiv/> */}
-      {/* <ServiceUpperPart /> */}
-      {/* <WebDevelopment /> */}
-      {/* <AppDevelopment/> */}
-      {/* <Hr /> */}
-      {/* <PerformanceManagement /> */}
-      {/* <TrainingAndDevelopment/> */}
-      {/* <Development/> */}
-      {/* <Branding /> */}
-      {/* <Market/> */}
-      {/* <Crm/> */}
-      {/* <SalesSupport/> */}
-      {/* <SearchEngine/> */}
-      {/* <Pay/> */}
-      {/* <Media/> */}
-      {/* <Email/> */}
-     
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Hitechmart" element={<Hitechmart />} />
+          <Route path="/FranchiseTank" element={<FranchiseTank />} />
+          <Route path="/Grand" element={<Grand />} />
+          <Route path="/Heaven" element={<Heaven />} />
+          <Route path="/Exports" element={<Exports />} />
+          <Route path="/OurService" element={<OurService />} />
+          <Route path="/OneLineDiv" element={<OneLineDiv />} />
+          <Route path="/ServiceUpperPart" element={<ServiceUpperPart />} />
+          <Route path="/WebDevelopment" element={<WebDevelopment />} />
+          <Route path="/AppDevelopment" element={<AppDevelopment />} />
+          <Route path="/Hr" element={<Hr />} />
+          <Route
+            path="/PerformanceManagement"
+            element={<PerformanceManagement />}
+          />
+          <Route
+            path="/TrainingAndDevelopment"
+            element={<TrainingAndDevelopment />}
+          />
+          <Route path="/Development" element={<Development />} />
+          <Route path="/Branding" element={<Branding />} />
+          <Route path="/Market" element={<Market />} />
+          <Route path="/Crm" element={<Crm />} />
+          <Route path="/SalesSupport" element={<SalesSupport />} />
+          <Route path="/SearchEngine" element={<SearchEngine />} />
+          <Route path="/Pay" element={<Pay />} />
+          <Route path="/Media" element={<Media />} />
+          <Route path="/Email" element={<Email />} />
+        </Routes>
+        <Footer/>
+      </Router>
     </div>
   );
 };

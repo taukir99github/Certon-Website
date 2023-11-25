@@ -1,6 +1,7 @@
 import React from "react";
 import Zoom from "react-reveal/Zoom";
 import Bounce from 'react-reveal/Bounce';
+import Fade from 'react-reveal/Fade';
 
 const CustomLowerPart = ({ p, image, button  , title , hidebutton}) => {
   return (
@@ -8,9 +9,9 @@ const CustomLowerPart = ({ p, image, button  , title , hidebutton}) => {
       <div className={`service-container-lower-pt-3 ${image}`}>
         <div className={`service-container-lower-pt-3-image `}>
           <div className="service-container-lower-pt-3-text">
-            <zoom Top>
+            <Fade Top>
             <h1>{title}</h1>
-            </zoom>
+            </Fade>
             <zoom Top>
             <p>{p}</p>
             </zoom>

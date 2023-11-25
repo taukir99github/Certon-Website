@@ -1,0 +1,140 @@
+.container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #183865;
+    flex-direction: column;
+}
+.ourService{
+font-weight: bolder;
+font-size: 35px;
+color: white;
+}
+.heading{
+ height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgediv{
+    height: 400px;
+    width: 100%;
+    background-color: #183865;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.img1{
+height: 90%;
+width: 30%;
+background:url(../../../../img/service/post.1.jpg);
+background-size: cover;
+
+}
+.img2{
+height: 90%;
+width: 30%;
+background:url(../../../../img/service/post.1\ \(1\).jpg);
+background-size: cover;
+}
+.img3{
+height: 90%;
+width: 30%;
+background:url(../../../../img/service/media\ bg-cover.png);
+background-size: cover;
+margin-right: 20px;
+}
+.img4{
+height: 90%;
+width: 30%;
+background:url(../../../../img/service/media\ bg-cover\ \(1\).png);
+background-size: cover;
+}
+.headingtext{
+    bottom: 0;
+    color: white;
+    font-weight: bolder;
+margin-top: 290px;
+margin-right: 220px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:640px) {
+    .container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #183865;
+    flex-direction: column;
+}
+.ourService{
+font-weight: bolder;
+font-size: 35px;
+color: white;
+}
+.heading{
+ height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgediv{
+    height: 200px;
+    width: 410px;
+    background-color: #183865;
+
+}
+.img1{
+    position: static;
+height: 90%;
+width: 45%;
+background:url(../../../../img/service/post.1.jpg);
+background-size: cover;
+margin-left: 50px;
+
+}
+.img2{
+height: 90%;
+width: 45%;
+background:url(../../../../img/service/post.1\ \(1\).jpg);
+background-size: cover;
+margin-right:47px;
+
+/* position: fixed; */
+}
+.img3{
+height: 90%;
+width: 45%;
+background:url(../../../../img/service/media\ bg-cover.png);
+background-size: cover;
+margin-left: 5x;
+}
+.img4{
+height: 90%;
+width: 45%;
+background:url(../../../../img/service/media\ bg-cover\ \(1\).png);
+background-size: cover;
+
+}
+.headingtext{
+    bottom: 0;
+    color: white;
+    font-weight: bolder;
+margin-top: 100px;
+margin-right: 220px;
+margin-left: 10px;
+}
+}

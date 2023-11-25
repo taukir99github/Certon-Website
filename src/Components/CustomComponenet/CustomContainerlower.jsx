@@ -14,6 +14,7 @@ const CustomContainerlower = ({ title, imageText }) => {
         </div>
         <div className="service-container-lower-pt-2-small-card">
           {imageText.map((text, index) => (
+            <Zoom Top>
             <div key={index} className="image-star">
               
               <div className="star-star">
@@ -23,6 +24,7 @@ const CustomContainerlower = ({ title, imageText }) => {
                 <p>{text}</p>
               </div>
             </div>
+            </Zoom>
           ))}
         </div>
       </div>

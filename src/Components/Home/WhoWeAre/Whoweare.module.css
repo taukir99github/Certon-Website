@@ -1,0 +1,157 @@
+/* Adjust the positioning and styling of the image container */
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: -0.88rem;
+  background-color: black;
+}
+
+/* Style the image */
+/* .imggg-cont img {
+  width: 100%;
+  height: auto;
+  display: block;
+} */
+
+/* Add a shadow overlay */
+.image-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the shadow color and opacity */
+}
+
+/* Position and style the text overlay container */
+.text-overlay-container {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  color: white; /* Text color */
+  z-index: 1; /* Place text above the shadow */
+}
+
+/* Style the h1 text */
+.text-overlay {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* Style the span text */
+.content {
+  position: absolute;
+  top: 420%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  line-height: 1.8;
+}
+.button {
+  position: absolute;
+  top: 800%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: #5ce1e6;
+  height: 50px;
+  width: 150px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+/* Style the button */
+.text-overlay2 {
+  background-color: #007bff; /* Button color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) and (min-width: 1025px) {
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 36.02rem;
+    margin-top: -0.88rem;
+  }
+  .image-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the shadow color and opacity */
+  }
+}
+@media (max-width: 600px) {
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    margin-top: -0.88rem;
+  }
+  .text-overlay {
+    position: absolute;
+    top: -170%;
+    font-weight: 100;
+    font-size: xx-large;
+    left: 46%;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    margin-left: 20px;
+    font-weight: bolder;
+  }
+  .content {
+    position: absolute;
+    /* top: 350%; */
+
+    color: white;
+    padding: 10px;
+    /* margin-left: 10rem; */
+    margin-right: -5rem;
+    margin-left: 0px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  .text-overlay2 {
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    /* font-size: 24px; */
+    background-color: #5ce1e6;
+    border-radius: 3rem;
+    border-color: #5ce1e6;
+    color: white;
+    padding: 10px;
+  }
+  .image {
+    height: 400px;
+    width: 100%;
+  }
+  .button {
+    display: none;
+    margin-top: 30px;
+    margin-right: 900px;
+  }
+}

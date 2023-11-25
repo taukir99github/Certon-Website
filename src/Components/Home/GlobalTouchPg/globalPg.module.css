@@ -1,0 +1,67 @@
+.main {
+  background-color: black;
+  height: 700px;
+  position: relative;
+}
+.imgediv {
+  background: url(../../../img/service/experiecebg.png);
+  height: 100%;
+  opacity: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.imge {
+  position: absolute;
+}
+.heading {
+  font-size: larger;
+  font-weight: 900;
+  color: white;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  font-size: 45px;
+}
+.content {
+  font-size: larger;
+  font-weight: 900;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  font-size: 5px;
+  line-height: 1.8;
+}
+.buttonglobal {
+  background-color: #5ce1e6;
+  position: absolute;
+  bottom: 25%;
+  left: 44%;
+  height: 50px;
+  width: 150px;
+  border-radius: 30px;
+}
+@media screen and (max-width: 640px) {
+  .heading {
+    margin-right: 150px;
+    /* font-size: medium; */
+    font-weight: 900;
+    color: white;
+    top: 25%;
+    left: 30%;
+    font-size: 30px;
+  }
+  .content {
+    font-family: "Gill Sans Extrabold", sans-serif;
+
+    text-align: center;
+    left: 0;
+    color: white;
+    position: absolute;
+    top: 50%;
+    width: 400px;
+    line-height: 2;
+  }
+}

@@ -1,0 +1,29 @@
+import React from "react";
+import styles from "./globalPg.module.css";
+import Fade from "react-reveal/Fade";
+import experiecebg from "../../../img/service/experiecebg.png";
+export const GlobalPg = () => {
+  return (
+    <div className={`${styles.main} shadow-inner `}>
+      <div style={{ opacity: "0.2" }}>
+        <img src={experiecebg} className="imge" alt="" />
+      </div>
+
+      {/* <div className={styles.imgediv}></div> */}
+      <Fade bottom>
+        <h1 className={styles.heading}>Experience a Global Touch</h1>
+      </Fade>
+      <Fade bottom>
+        <p className={styles.content}>
+          We use the latest technology available in the market and keep up with
+          industry advancements. As a top IT <br />
+          consulting and services company, we value our clients and serve
+          transparent and sustainable support and
+          <br />
+          assistance to maintain a long-term association with us.
+        </p>
+      </Fade>
+      <button className={styles.buttonglobal}> Join us Now</button>
+    </div>
+  );
+};

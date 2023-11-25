@@ -4,7 +4,7 @@ import "./CustomUppersection.css";
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 
-const CustomUppersection = ({ title, image }) => {
+const CustomUppersection = ({ title, image, p }) => {
   return (
     <div>
       <div className={`image-container ${image}`}>
@@ -13,6 +13,7 @@ const CustomUppersection = ({ title, image }) => {
           <Zoom Top>
           <h1>{title}</h1>
           </Zoom>
+          <p>{p}</p>
         </div>
       </div>
     </div>
