@@ -3,17 +3,42 @@
   padding: 0;
   box-sizing: border-box;
 }
-nav {
+a {
+  text-decoration: none;
+  color: white;
+}
+.navbar {
+  background-color: #183865;
   width: 100%;
-  display: flex;
-  /* gap: 4rem; */
-  justify-content: space-between;
-  padding: 1.5rem 3rem;
-  /* background-color: blue; */
-  background: transparent;
-  position: absolute;
+  position: fixed;
   top: 0;
-  z-index: 10;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 3rem;
+  color: white;
+}
+.mobNavbar h3 {
+  text-align: center;
+}
+.respoNav {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  color: white;
+}
+.toggler {
+  width: 40px;
+  height: 50px;
 }
 .nav-pt-1 img {
   width: 100px;
@@ -35,15 +60,18 @@ nav {
   text-decoration: none;
   position: absolute;
   z-index: 10;
-  background: black;
+  background: rgb(131, 123, 123);
   padding: 10px 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   border-radius: 8px;
 }
-.list2{
-    list-style: none;
+.mobNavbar {
+  display: none;
+}
+.list2 {
+  list-style: none;
   text-decoration: none;
   /* position: absolute; */
   /* z-index: 10; */
@@ -53,4 +81,47 @@ nav {
   flex-direction: column;
   gap: 10px;
   border-radius: 8px;
+}
+@media only screen and (max-width: 600px) {
+  .respoNav {
+    padding: 1.5rem 1rem;
+  }
+  .navbar {
+    padding: 1.5rem 1rem;
+  }
+  .mobNavbar {
+    position: fixed;
+    height: auto;
+    width: 100%;
+    background-color: #183865;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 38px;
+    font-weight: bolder;
+    color: white;
+    padding: 6rem 0px 3rem 0px;
+    z-index: 9;
+  }
+  .listMob {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px 0px;
+  }
+  .listMob1 {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px 0px;
+  }
 }

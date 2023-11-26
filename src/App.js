@@ -25,7 +25,9 @@ import Email from "./Pages/E-mailMarketing/Email";
 import CustomLowerPart from "./Components/CustomComponenet/CustomLowerPart";
 import Navbar from "./Components/Navbar/Navbar";
 import { Home } from "./Components/Home/Home";
-import {Footer} from "./Components/Footer/Footer"
+import NewFooter from "./Components/Footer/NewFooter";
+import Faq from "./Components/FAQ/Faq";
+import About from "./Components/Hitechmart";
 
 const App = () => {
   return (
@@ -34,13 +36,13 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+
           <Route path="/Hitechmart" element={<Hitechmart />} />
           <Route path="/FranchiseTank" element={<FranchiseTank />} />
           <Route path="/Grand" element={<Grand />} />
           <Route path="/Heaven" element={<Heaven />} />
           <Route path="/Exports" element={<Exports />} />
-          <Route path="/OurService" element={<OurService />} />
-          <Route path="/OneLineDiv" element={<OneLineDiv />} />
           <Route path="/ServiceUpperPart" element={<ServiceUpperPart />} />
           <Route path="/WebDevelopment" element={<WebDevelopment />} />
           <Route path="/AppDevelopment" element={<AppDevelopment />} />
@@ -62,8 +64,11 @@ const App = () => {
           <Route path="/Pay" element={<Pay />} />
           <Route path="/Media" element={<Media />} />
           <Route path="/Email" element={<Email />} />
+          <Route path="/Faq" element={<Faq />} />
         </Routes>
-        <Footer/>
+
+        <NewFooter />
+        
       </Router>
     </div>
   );

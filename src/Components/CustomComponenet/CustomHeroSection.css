@@ -25,9 +25,7 @@
   padding: 28px 211px;
 }
 @media (max-width: 768px) {
-  .service-container-hero {
-    width: 92%;
-  }
+
   .image-container-text {
     font-size: 16px;
     padding: 0 15px;

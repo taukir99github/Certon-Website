@@ -8,10 +8,18 @@
 .HomeTopBack2 {
   background-image: url("../../Images/HomeTopBack2.svg");
 }
+.HomeGlobalBack {
+  background-image: url("../../Images/HomeGlobalBack.svg");
+}
 .HomeTopBack2 h1 {
   font-size: 3.5rem !important;
   width: 65% !important;
 }
 .bckground-global {
   background-image: url("../../img/service/Homebg3.jpg");
+}
+@media screen and (max-width: 640px) {
+  .HomeTopBack2 h1 {
+    font-size: 2.5rem !important;
+  }
 }

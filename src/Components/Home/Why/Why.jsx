@@ -45,10 +45,11 @@ export const Why = () => {
 
           <section className={styles.heroSection}>
             <div className={styles.cardGrid}>
+              <Fade Top>
               {categories.map((cat) => (
                 <>
                   {" "}
-                  <Fade>
+                  <Fade Top>
                     <div className={styles.card}>
                       <div
                         className={`${styles.cardBackground} ${cat.imgUrl }`}
@@ -61,6 +62,7 @@ export const Why = () => {
                   </Fade>
                 </>
               ))}
+              </Fade>
             </div>
           </section>
         </div>

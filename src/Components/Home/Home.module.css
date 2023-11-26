@@ -79,7 +79,7 @@
 
 .control-btn .icon {
   font-size: 50px;
-  color: "white";
+  color: white;
 }
 
 .container {
@@ -142,25 +142,27 @@
   height: 100%;
 }
 
-@media (max-width: 600px) {
+/* Responsive Styles */
+@media (max-width: 1200px) {
   .category1 img {
     height: 30rem;
   }
+}
 
-  .overlay-button1 {
-    margin-left: 0rem;
-    margin-bottom: 0.2rem;
-  }
-
-  .overlay-button2 {
-    margin-left: 0rem;
-  }
-
-  .overlay-text {
-    font-size: large;
-  }
-
-  .overlay-text1 {
-    font-size: medium;
+@media (max-width: 768px) {
+  .category1 img {
+    height: 25rem;
   }
 }
+
+@media (max-width: 600px) {
+  .category1 img {
+    height: 20rem;
+  }
+
+  .overlay-button1 {
+    margin-bottom: 0.2rem;
+  }
+}
+
+

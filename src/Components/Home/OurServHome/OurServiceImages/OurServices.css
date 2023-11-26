@@ -1,0 +1,57 @@
+.OurServices-content {
+  color: #fff;
+  background-color: #183865;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 0px;
+  width: 100%;
+  gap: 2rem;
+}
+.OurServices-head {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.20000000298023224px;
+}
+.OurServices-image-content {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.OurServices-card {
+  width: 410px;
+  height: 350px;
+}
+.OurServices-card1 {
+  background-image: url("../../../../Images/OurServiceIt.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.OurServices-card2 {
+  background-image: url("../../../../Images/OurServicehr.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.OurServices-card3 {
+  background-image: url("../../../../Images/OurServicessales.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.OurServices-card4 {
+  background-image: url("../../../../Images/OurServicesdigital.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 640px) {
+  .OurServices-image-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .OurServices-card {
+    width: 310px;
+    height: 250px;
+  }
+}

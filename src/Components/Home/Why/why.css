@@ -11,3 +11,10 @@
 .why4{
     background-image: url("../../../img/service/whyCerton4.jpg");
 }
+@media (min-width: 600px) {
+    
+    .hea{
+      width: 90%;
+      padding-top: 2rem;
+    }
+  }

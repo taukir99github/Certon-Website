@@ -87,7 +87,13 @@ export const Home = () => {
           ))}
         </Slider>
         <Idea />
-        <GlobalPg />
+        {/* <GlobalPg /> */}
+        <CustomLowerPart
+          title={"Experience a Global Touch"}
+          p={`   We use the latest technology available in the market and keep up with industry advancements. As a top IT consulting and services company, we value our clients and serve transparent and sustainable support and assistance to maintain a long-term association with us.`}
+          image={"HomeGlobalBack"}
+          button={"Join us Now"}
+        />
 
         <ContentHome1 />
         {/* <WhoWeAre /> */}

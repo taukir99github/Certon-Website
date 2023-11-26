@@ -30,6 +30,7 @@
 .service-container-lower-pt-3-image img {
   width: 100%;
 }
+
 .service-container-lower-pt-3-text {
   width: 50%;
   flex-direction: column;
@@ -39,6 +40,9 @@
   text-align: center;
 }
 .service-container-lower-pt-3-text p {
+  color: white;
+}
+.service-container-lower-pt-3-text h1 {
   color: white;
 }
 .service-container-button {
@@ -51,6 +55,7 @@
   border-radius: 24px;
   border: none;
   outline: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 @media (max-width: 768px) {
   .image-container-text {
