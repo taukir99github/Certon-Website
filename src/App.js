@@ -27,7 +27,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import { Home } from "./Components/Home/Home";
 import NewFooter from "./Components/Footer/NewFooter";
 import Faq from "./Components/FAQ/Faq";
-import About from "./Components/Hitechmart";
+import About from "./Components/AboutUs/About";
 
 const App = () => {
   return (

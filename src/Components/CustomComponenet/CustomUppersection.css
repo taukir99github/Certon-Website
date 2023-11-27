@@ -3,13 +3,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
 }
 
 .image-container img {
   width: 100%;
+  height: 100vh;
 }
 .image-container-text h1 {
   font-size: 3rem;

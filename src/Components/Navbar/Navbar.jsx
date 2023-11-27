@@ -24,10 +24,8 @@ function Navbar() {
   };
 
   useEffect(() => {
-    // Attach the event listener when the component mounts
     window.addEventListener("resize", handleResize);
 
-    // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -110,7 +108,9 @@ function Navbar() {
     <>
       <nav className={scrollPosition > 0 ? "navbar" : "respoNav"}>
         <div className="nav-pt-1">
+          <Link to="/">
           <img src={navnew} alt="" />
+          </Link>
         </div>
         {!isMobile ? (
           <div className="nav-pt-2">
@@ -304,11 +304,21 @@ function Navbar() {
                     : { display: "none" }
                 }
               >
-                <li>Hitecmart</li>
-                <li>FranchiseTank</li>
-                <li>Grand havens</li>
-                <li>Job Tanks</li>
-                <li>Certon exports</li>
+                <Link to="/Hitechmart">
+                  <li>Hitecmart</li>
+                </Link>
+                <Link to="/FranchiseTank">
+                  <li>FranchiseTank</li>
+                </Link>
+                <Link to="/Heaven">
+                  <li>Grand havens</li>
+                </Link>
+                <Link to="/Grand">
+                  <li>Job Tanks</li>
+                </Link>
+                <Link to="/Exports">
+                  <li>Certon exports</li>
+                </Link>
               </ul>
             </div>
             <div

@@ -2,6 +2,7 @@ import React from "react";
 import Zoom from "react-reveal/Zoom";
 import Bounce from "react-reveal/Bounce";
 import Fade from "react-reveal/Fade";
+import "./CustomLowerPart.css"
 
 const CustomLowerPart = ({ p, image, button, title, hidebutton }) => {
   return (

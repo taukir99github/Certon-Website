@@ -66,28 +66,37 @@
   padding: 7px 10px;
   border-radius: 10px;
 }
+.copyright {
+  display: flex;
+  text-align: center;
+  background-color: #183865;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+}
 @media only screen and (max-width: 600px) {
   .main-footer {
     flex-direction: column;
   }
-  .footer-pt-1{
+  .footer-pt-1 {
     width: 100%;
     gap: 1.5rem;
   }
-  .footer-text{
+  .footer-text {
     width: 100%;
     gap: 2rem;
   }
-  .footer-part1-head h3{
+  .footer-part1-head h3 {
     width: 100%;
   }
-  .footer-pt-2{
+  .footer-pt-2 {
     width: 100%;
   }
-  .footer-content-head{
+  .footer-content-head {
     font-size: 18px;
   }
-  .footer-content{
+  .footer-content {
     width: 100%;
     display: flex;
     gap: 1rem;
@@ -95,6 +104,5 @@
     margin-top: 2rem;
     /* margin-left: 9rem; */
     padding: 0px 13px;
-  
   }
 }

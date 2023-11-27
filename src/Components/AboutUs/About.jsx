@@ -1,6 +1,8 @@
 import React from "react";
-import styles from "./App.module.css";
-const App = () => {
+import styles from "./About.module.css";
+import CustomService from "../CustomComponenet/CustomService";
+import "./About.css"
+const About = () => {
   return (
     <div className={styles["hole-container"]}>
       <div className={styles["img-container"]}>
@@ -26,42 +28,20 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className={styles["grow-container"]}>
-        <div>
-          <h2 className={styles["hea1"]}>Grow With Us</h2>
-          <p className={styles["content"]}>
-            {" "}
-            Certon’s experts help businesses to grow globally.
-          </p>
-        </div>
-        <div className={styles["cart-container"]}>
-          <div className={styles["img1"]}>
-            <div className={styles["width"]}>
-              <h4 className={styles["text1"]}>
-                Where Innovation & Collaboration Meets
-              </h4>
-            </div>
-          </div>
-          <div className={styles["img2"]}>
-            <div className={styles["width"]}>
-              <h4 className={styles["text1"]}>
-                Creating a Vibrant Work Culture
-              </h4>
-            </div>
-          </div>
-          <div className={styles["img3"]}>
-            <div className={styles["width"]}>
-              <h4 className={styles["text1"]}>Making a Difference</h4>
-            </div>
-          </div>
+      
 
-          <div className={styles["img4"]}>
-            <div className={styles["width"]}>
-              <h4 className={styles["text1"]}>Powerful Partnership</h4>
-            </div>
-          </div>
-        </div>
-      </div>
+
+      <CustomService
+      title={"Grow With Us"}
+      para={"Certon’s experts help businesses to grow globally."}
+      image={[
+        "Aboutcard1",
+        "Aboutcard2",
+        "Aboutcard3",
+        "Aboutcard4",
+      ]}
+      />
+
       <div className={styles["img1-container"]}>
         <div className={styles["content"]}>
           <h2 className={styles["hea1"]}>About Certon</h2>
@@ -174,4 +154,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default About;

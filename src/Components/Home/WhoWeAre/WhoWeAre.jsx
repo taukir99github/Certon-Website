@@ -31,7 +31,7 @@ export const WhoWeAre = () => {
           flourish your business.
         </div>
         {/* <button className={idea["text-overlay2"]}>Join Us Now</button> */}
-        <button className={idea.button}> Join us Now</button>
+        {/* <button className={idea.button}> Join us Now</button> */}
       </div>
       </Fade>
     </div>

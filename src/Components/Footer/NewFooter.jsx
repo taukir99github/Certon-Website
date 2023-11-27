@@ -45,7 +45,7 @@ const NewFooter = () => {
               Privacy & <br /> Policy
             </p>
             <Link to="/Faq">
-            <p>FAQ</p>
+              <p>FAQ</p>
             </Link>
           </div>
         </div>
@@ -61,14 +61,14 @@ const NewFooter = () => {
               <p>Franchise Tanks</p>
             </Link>
             <Link to="/Heaven">
-                  <p>Grand heavens</p>
-                  </Link>
-                  <Link to="/Exports">
-                  <p>Certon exports</p>
-                  </Link>
-                  <Link to="/Grand">
-                  <p>Job Tanks</p>
-                  </Link>
+              <p>Grand heavens</p>
+            </Link>
+            <Link to="/Exports">
+              <p>Certon exports</p>
+            </Link>
+            <Link to="/Grand">
+              <p>Job Tanks</p>
+            </Link>
           </div>
           <div className="footer-pt-3">
             <div className="footer-service">
@@ -84,7 +84,7 @@ const NewFooter = () => {
               <div className="footer-content-head">Get In Touch</div>
             </div>
             <div className="footer-number">080-68507663</div>
-            
+
             <p>
               {" "}
               Plot No: 128-P2, Ground Floor, EPIP Zone Whitefield Rd, near
@@ -95,7 +95,11 @@ const NewFooter = () => {
             </div>
           </div>
         </div>
+       
       </div>
+      <div className="copyright">
+        <div style={{textAlign:"center"}}>Certon © 2023, All Right Reserved.</div>
+        </div>
     </div>
   );
 };

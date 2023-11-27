@@ -8,6 +8,7 @@
     align-items: center;
     margin-left: 1rem;
     gap: 1rem;
+    cursor: pointer;
   }
   .faq-box-content p {
     font-size: 15px;
