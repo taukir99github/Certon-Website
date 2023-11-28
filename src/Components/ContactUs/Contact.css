@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-contact {
+  width: 100%;
+  height: auto;
+  background: #183865;
+  color: white;
+  overflow: hidden;
+}
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 8rem;
+}
+.contact-content h1 {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+}
+.contact-para {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+}
+.heading-Get {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 45px;
+  font-weight: 600;
+}
+.hero-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 7rem;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.message icons {
+  font-size: 20px;
+}
+.phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 35%;
+  text-align: center;
+  margin-top: 25px;
+}
+.form-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 10px;
+  padding-bottom: 2rem;
+}
+.Form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  box-shadow: rgb(255 250 250 / 16%) 0px 8px 12px,
+    rgb(219 215 215 / 23%) 0px 3px 6px;
+  padding-bottom: 1rem;
+}
+.upper-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 1rem;
+  margin: 33px;
+}
+.lower-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 33px;
+}
+input {
+  padding: 16px 30px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.message-section {
+  display: flex;
+  justify-content: center;
+}
+textarea {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+input::placeholder {
+  color: black;
+  font-size: 14px;
+}
+input:focus {
+  border: 2px solid #183865;
+}
+textarea::placeholder {
+  color: black;
+  font-size: 14px;
+  font-family: arial;
+}
+textarea {
+  padding: 10px;
+  color: black;
+  font-size: 14px;
+  font-family: arial;
+}
+.form-btn button {
+  padding: 13px 47px;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background: aqua;
+  font-weight: 400;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.location {
+  width: 57%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-radius: 6px;
+}
+@media (max-width: 768px) {
+  .contact-content h1 {
+    font-size: 24px;
+  }
+  .contact-para p {
+    font-size: 20px;
+    margin-top: 3rem;
+  }
+  .heading-Get p {
+    font-size: 24px;
+  }
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem 2rem;
+  }
+  .address {
+    width: 100%;
+  }
+  .form-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .Form {
+    width: 100%;
+  }
+  .upper-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .lower-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .message-section textarea {
+    width: 90%;
+  }
+}

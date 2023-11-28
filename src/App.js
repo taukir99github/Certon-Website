@@ -28,6 +28,8 @@ import { Home } from "./Components/Home/Home";
 import NewFooter from "./Components/Footer/NewFooter";
 import Faq from "./Components/FAQ/Faq";
 import About from "./Components/AboutUs/About";
+import Contact from "./Components/ContactUs/Contact";
+import Carrer from "./Components/Carrers/Carrer";
 
 const App = () => {
   return (
@@ -65,10 +67,11 @@ const App = () => {
           <Route path="/Media" element={<Media />} />
           <Route path="/Email" element={<Email />} />
           <Route path="/Faq" element={<Faq />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Contact/>} />
+          <Route path="/Carrer" element={<Carrer/>} />
         </Routes>
-
         <NewFooter />
-        
       </Router>
     </div>
   );
