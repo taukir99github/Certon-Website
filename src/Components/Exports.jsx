@@ -4,8 +4,7 @@ import CustomUppersection from "./CustomComponenet/CustomUppersection";
 import CustomHeroSection from "./CustomComponenet/CustomHeroSection";
 import CustomContainerlower from "./CustomComponenet/CustomContainerlower";
 import CustomLowerPart from "./CustomComponenet/CustomLowerPart";
-import Zoom from "react-reveal/Zoom";
-import Bounce from 'react-reveal/Bounce';
+
 
 const Exports = () => {
   return (
