@@ -60,7 +60,7 @@ a {
   text-decoration: none;
   position: absolute;
   z-index: 10;
-  background: rgb(131, 123, 123);
+  background: rgb(34, 32, 32);
   padding: 10px 10px;
   display: flex;
   flex-direction: column;
@@ -75,7 +75,7 @@ a {
   text-decoration: none;
   /* position: absolute; */
   /* z-index: 10; */
-  background: rgb(34, 32, 32);
+  background: rgb(131, 123, 123);
   padding: 10px 10px;
   display: flex;
   flex-direction: column;
