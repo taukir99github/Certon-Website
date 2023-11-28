@@ -33,7 +33,7 @@ const Market = () => {
       <CustomLowerPart
         image={"lower-image"}
         hidebutton={true}
-        title={" We Start with Research"}
+        title={"We Start with Research"}
         p={`
         Our industry experts use advanced technologies and the latest statistics to analyze the market and then make proper interpretations to become successful.        `}
       />

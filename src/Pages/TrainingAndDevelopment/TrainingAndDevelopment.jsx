@@ -13,7 +13,7 @@ const TrainingAndDevelopment = () => {
   <div>
   <CustomUppersection
         title={" Our Professional Training Creates a Better Organization"}
-        image={"service-image-5"}
+        image={"service-image-0"}
       />
       <OurService
         image={<img src={TrainingLogo} />}
