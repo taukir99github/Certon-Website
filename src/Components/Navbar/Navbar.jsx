@@ -4,8 +4,8 @@ import { CiViewTimeline } from "react-icons/ci";
 import Slide from "react-reveal/Slide";
 import { Link } from "react-router-dom";
 import { Fade } from "react-reveal";
-import navlogo from "../../Images/navlogo.png";
 import navnew from "../../Images/Navnew.svg";
+
 function Navbar() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -30,6 +30,7 @@ function Navbar() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   const handleMouseEnter = () => {
     setDropdownVisible(true);
   };
@@ -37,6 +38,7 @@ function Navbar() {
   const handleMouseLeave = () => {
     setDropdownVisible(false);
   };
+
   const handleMouseEnter1 = () => {
     setDropdownVisible1(true);
   };
@@ -44,6 +46,7 @@ function Navbar() {
   const handleMouseLeave1 = () => {
     setDropdownVisible1(false);
   };
+
   const handleMouseEntermob = () => {
     setDropdownVisiblemob(true);
   };
@@ -51,6 +54,7 @@ function Navbar() {
   const handleMouseLeavemob = () => {
     setDropdownVisiblemob(false);
   };
+
   const handleMouseEntermob1 = () => {
     setDropdownVisiblemob1(true);
   };
@@ -58,41 +62,40 @@ function Navbar() {
   const handleMouseLeavemob1 = () => {
     setDropdownVisiblemob1(false);
   };
+
   const handlemobNav = () => {
     setmobNav(!mobNav);
   };
 
   const itmouseEnter = () => {
-    setitmouse(!itmouse);
+    setitmouse(true);
     sethrmouse(false);
     setsalesmouse(false);
     setdigitalmouse(false);
   };
+
   const hrmouseEnter = () => {
-    sethrmouse(!hrmouse);
+    sethrmouse(true);
     setitmouse(false);
     setsalesmouse(false);
     setdigitalmouse(false);
   };
 
   const salesmouseEnter = () => {
-    setsalesmouse(!salesmouse);
+    setsalesmouse(true);
     setitmouse(false);
     sethrmouse(false);
     setdigitalmouse(false);
   };
+
   const digitalmouseEnter = () => {
-    setdigitalmouse(!digitalmouse);
+    setdigitalmouse(true);
     setitmouse(false);
     sethrmouse(false);
     setsalesmouse(false);
   };
 
   useEffect(() => {
-    function isMobileScreen() {
-      console.log(window.innerWidth <= 800);
-      return window.innerWidth <= 800;
-    }
     const onScroll = () => {
       const scrollY = window.scrollY;
       setScrollPosition(scrollY);
@@ -102,14 +105,13 @@ function Navbar() {
       window.removeEventListener("scroll", onScroll);
     };
   }, []);
-  // const screenSizeIsMobile = isMobileScreen();
 
   return (
     <>
       <nav className={scrollPosition > 0 ? "navbar" : "respoNav"}>
         <div className="nav-pt-1">
           <Link to="/">
-          <img src={navnew} alt="" />
+            <img src={navnew} alt="" />
           </Link>
         </div>
         {!isMobile ? (
@@ -164,7 +166,7 @@ function Navbar() {
               >
                 <ul className="list">
                   <li>
-                    <div onClick={itmouseEnter}>
+                    <div onMouseEnter={itmouseEnter}>
                       IT Services
                       <div
                         style={
@@ -185,7 +187,7 @@ function Navbar() {
                       </div>
                     </div>
                   </li>
-                  <div onClick={hrmouseEnter}>
+                  <div onMouseEnter={hrmouseEnter}>
                     <li>
                       HR Services
                       <Fade>
@@ -212,7 +214,7 @@ function Navbar() {
                       </Fade>
                     </li>
                   </div>
-                  <div onClick={salesmouseEnter}>
+                  <div onMouseEnter={salesmouseEnter}>
                     <li>
                       Sales and Marketing
                       <div
@@ -237,7 +239,7 @@ function Navbar() {
                       </div>
                     </li>
                   </div>
-                  <div onClick={digitalmouseEnter}>
+                  <div onMouseEnter={digitalmouseEnter}>
                     <li>
                       Digital Marketing
                       <div>
@@ -271,8 +273,12 @@ function Navbar() {
                 </ul>
               </div>
             </div>
-            <div>Carrers</div>
-            <div>Contact Us</div>
+            <Link to="/Carrer">
+              <div>Careers</div>
+            </Link>
+            <Link to="/Contact">
+              <div>Contact Us</div>
+            </Link>
           </div>
         ) : (
           <CiViewTimeline className="toggler" onClick={handlemobNav} />
@@ -334,7 +340,7 @@ function Navbar() {
                     : { display: "none" }
                 }
               >
-                <div onClick={itmouseEnter}>
+                <div onMouseEnter={itmouseEnter}>
                   IT Services
                   <div
                     style={itmouse ? { display: "flex" } : { display: "none" }}
@@ -352,7 +358,7 @@ function Navbar() {
                     </ul>
                   </div>
                 </div>
-                <div onClick={hrmouseEnter}>
+                <div onMouseEnter={hrmouseEnter}>
                   <li>
                     HR Services
                     <Fade>
@@ -379,7 +385,7 @@ function Navbar() {
                     </Fade>
                   </li>
                 </div>
-                <div onClick={salesmouseEnter}>
+                <div onMouseEnter={salesmouseEnter}>
                   <li>
                     Sales and Marketing
                     <div
@@ -404,7 +410,7 @@ function Navbar() {
                     </div>
                   </li>
                 </div>
-                <div onClick={digitalmouseEnter}>
+                <div onMouseEnter={digitalmouseEnter}>
                   <li>
                     Digital Marketing
                     <div>
