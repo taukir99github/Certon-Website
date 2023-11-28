@@ -46,6 +46,34 @@ const Carrer = () => {
             </div>
           </div>
         </div>
+
+        {/* our code */}
+        <div className="hole-container">
+          <h1 className="job-heading">Job Openings</h1>
+          <div className="carts">
+            <div className="cart1">
+              <p></p>
+
+            </div>
+            <div className="cart1">
+              <p></p> 
+
+            </div>
+            <div className="cart1">
+              <p></p>
+
+            </div>
+            <div className="cart1">
+              <p></p>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
       </div>
     </>
   );

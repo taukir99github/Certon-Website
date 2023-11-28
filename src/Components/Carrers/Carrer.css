@@ -83,3 +83,30 @@
     flex-direction: column;
   }
 }
+
+
+.job-heading{
+  color:#FFFFFF;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+.cart1{
+  background-color: #FFFFFF;
+  height:400px;
+  width:400px;
+  border-radius: 10px;
+  margin-right: 10px;
+
+}
+
+
+.hole-container{
+  padding: 20px;
+}
+.carts{
+  display: flex;
+  justify-content:center;
+}
