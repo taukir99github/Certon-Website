@@ -23,7 +23,7 @@ import Pay from "./Pages/PayPerClickAdvertising/Pay";
 import Media from "./Pages/SocialMediaMarketing/Media";
 import Email from "./Pages/E-mailMarketing/Email";
 import CustomLowerPart from "./Components/CustomComponenet/CustomLowerPart";
-import Navbar from "./Components/Navbar/Navbar";
+import {Navbar} from "./Components/Navbar/Navbar";
 import { Home } from "./Components/Home/Home";
 import NewFooter from "./Components/Footer/NewFooter";
 import Faq from "./Components/FAQ/Faq";
@@ -68,8 +68,8 @@ const App = () => {
           <Route path="/Email" element={<Email />} />
           <Route path="/Faq" element={<Faq />} />
           <Route path="/About" element={<About />} />
-          <Route path="/Contact" element={<Contact/>} />
-          <Route path="/Carrer" element={<Carrer/>} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Carrer" element={<Carrer />} />
         </Routes>
         <NewFooter />
       </Router>
