@@ -5,8 +5,6 @@ import FranchiseTank from "./Components/FranchiseTank";
 import Grand from "./Components/Grand";
 import Heaven from "./Components/Heaven";
 import Exports from "./Components/Exports";
-import OurService from "./Components/CustomComponenet/ServiceComponents/OurService";
-import OneLineDiv from "./Components/CustomComponenet/OneLine/OneLineDiv";
 import ServiceUpperPart from "./Pages/ServiceUpperPart/ServiceUpperPart";
 import WebDevelopment from "./Pages/WebDevelopment/WebDevelopment";
 import AppDevelopment from "./Pages/AppDevelopment/AppDevelopment";
