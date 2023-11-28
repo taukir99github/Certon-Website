@@ -270,8 +270,12 @@ function Navbar() {
                 </ul>
               </div>
             </div>
+            <Link to="/Carrer">
             <div>Carrers</div>
+            </Link>
+            <Link to="/Contact">
             <div>Contact Us</div>
+            </Link>
           </div>
         ) : (
           <CiViewTimeline className="toggler" onClick={handlemobNav} />
