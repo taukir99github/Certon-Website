@@ -25,7 +25,7 @@ import Pay from "./Pages/PayPerClickAdvertising/Pay";
 import Media from "./Pages/SocialMediaMarketing/Media";
 import Email from "./Pages/E-mailMarketing/Email";
 import CustomLowerPart from "./Components/CustomComponenet/CustomLowerPart";
-import { Navbar } from "./Components/Navbar/Navbar";
+import  Navbar  from "./Components/Navbar/Navbar";
 import { Home } from "./Components/Home/Home";
 import NewFooter from "./Components/Footer/NewFooter";
 import Faq from "./Components/FAQ/Faq";
