@@ -12,6 +12,10 @@ function Navbar() {
   const [isDropdownVisible1, setDropdownVisible1] = useState(false);
   const [isDropdownVisiblemob, setDropdownVisiblemob] = useState(false);
   const [isDropdownVisiblemob1, setDropdownVisiblemob1] = useState(false);
+  const [isItDropdown, setIsItDropdown] = useState(false);
+  const [isHrDropdown, setIsHrDropdown] = useState(false);
+  const [isSalesDropdown, setIsSalesDropdown] = useState(false);
+  const [isDigitalDropdown, setIsDigitalDropdown] = useState(false);
   const [mobNav, setmobNav] = useState(false);
   const [itmouse, setitmouse] = useState(false);
   const [hrmouse, sethrmouse] = useState(false);
@@ -32,6 +36,34 @@ function Navbar() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+  const handleITEnter = () => {
+    setIsItDropdown(true);
+  };
+
+  const handleITLeave = () => {
+    setIsItDropdown(false);
+  };
+  const handleSalesEnter = () => {
+    setIsSalesDropdown(true);
+  };
+
+  const handleSalesLeave = () => {
+    setIsSalesDropdown(false);
+  };
+  const handleDigitalEnter = () => {
+    setIsDigitalDropdown(true);
+  };
+
+  const handleDigitalLeave = () => {
+    setIsDigitalDropdown(false);
+  };
+  const handleHREnter = () => {
+    setIsHrDropdown(true);
+  };
+
+  const handleHRLeave = () => {
+    setIsHrDropdown(false);
+  };
   const handleMouseEnter = () => {
     setDropdownVisible(true);
   };
@@ -123,7 +155,6 @@ function Navbar() {
             <div
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              className="dropdown1"
             >
               Our Brand
               <div
@@ -131,30 +162,29 @@ function Navbar() {
                   isDropdownVisible ? { display: "block" } : { display: "none" }
                 }
               >
-                <div className="list dropdown-content1">
+                <ul className="list">
                   <Link to="/Hitechmart">
-                    <div>Hitecmart</div>
+                    <li>Hitecmart</li>
                   </Link>
                   <Link to="/FranchiseTank">
-                    <div>FranchiseTank</div>
+                    <li>FranchiseTank</li>
                   </Link>
-                  <Link to="/GrandHeaven">
-                    <div>Grand heavens</div>
+                  <Link to="/Heaven">
+                    <li>Grand heavens</li>
                   </Link>
-                  <Link to="/JobTanks">
-                    <div>Job Tanks</div>
+                  <Link to="/Grand">
+                    <li>Job Tanks</li>
                   </Link>
-                  <Link to="/CertonExports">
-                    <div>Certon exports</div>
+                  <Link to="/Exports">
+                    <li>Certon exports</li>
                   </Link>
-                </div>
+                </ul>
               </div>
             </div>
 
             <div
               onMouseEnter={handleMouseEnter1}
               onMouseLeave={handleMouseLeave1}
-              className="dropdown2"
             >
               Our Service
               <div
@@ -164,114 +194,221 @@ function Navbar() {
                     : { display: "none" }
                 }
               >
-                <div className="list">
-                  <div className="dropdown-content2">
-                    <div onClick={itmouseEnter}>
+                <ul className="list">
+                  <li>
+                    <div
+                      onMouseEnter={handleITEnter}
+                      onMouseLeave={handleITLeave}
+                    >
                       IT Services
                       <div
+                        className="list-item-content1"
                         style={
-                          itmouse ? { display: "flex" } : { display: "none" }
+                          isItDropdown
+                            ? { display: "block" }
+                            : { display: "none" }
                         }
                       >
-                        <div className="list2 dropdown-content3">
-                          <Link to="/SoftwareDevelopment">
-                            <div>Software Development</div>
+                        <ul className="list2">
+                          <Link
+                            to="/ServiceUpperPart"
+                            onClick={() => {
+                              handleITLeave();
+                              handleMouseLeave1();
+                            }}
+                          >
+                            <li>Software Development</li>
                           </Link>
-                          <Link to="/WebDevelopment">
-                            <div>Web Development </div>
+                          <Link
+                            to="/WebDevelopment"
+                            onClick={() => {
+                              handleITLeave();
+                              handleMouseLeave1();
+                            }}
+                          >
+                            <li>Web Development </li>
                           </Link>
-                          <Link to="/AppDevelopment">
-                            <div>App Development</div>
+                          <Link
+                            to="/AppDevelopment"
+                            onClick={() => {
+                              handleITLeave();
+                              handleMouseLeave1();
+                            }}
+                          >
+                            <li>App Development</li>
                           </Link>
-                        </div>
+                        </ul>
                       </div>
                     </div>
-                  </div>
-                  <div onClick={hrmouseEnter} className="dropdown3">
-                    <div >
+                  </li>
+                  <div
+                    onMouseEnter={handleHREnter}
+                    onMouseLeave={handleHRLeave}
+                  >
+                    <li>
                       HR Services
-                      <Fade>
-                        <div
-                          style={
-                            hrmouse ? { display: "flex" } : { display: "none" }
-                          }
-                        >
-                          <div className="list2 dropdown-content3">
-                            <Link to="/TalentAcquisitionandRecruitment">
-                              <div>Talent Acquisition/Recruitment</div>
-                            </Link>
-                            <Link to="/PerformanceManagement">
-                              <div>Performance Management</div>
-                            </Link>
-                            <Link to="/EmployeeTrainingandDevelopment">
-                              <div>Employee Training/Development</div>
-                            </Link>
-                            <Link to="/OrganizationalDevelopment
-">
-                              <div>Organizational Development</div>
-                            </Link>
-                          </div>
-                        </div>
-                      </Fade>
-                    </div>
+                      <div
+                        className="list-item-content1"
+                        style={
+                          isHrDropdown
+                            ? { display: "block" }
+                            : { display: "none" }
+                        }
+                      >
+                        <ul className="list2">
+                          <Link
+                            to="/Hr"
+                            onClick={() => {
+                              handleHRLeave();
+                              handleMouseLeave1();
+                            }}
+                          >
+                            <li>Talent Acquisition/Recruitment</li>
+                          </Link>
+                          <Link
+                            to="/PerformanceManagement"
+                            onClick={() => {
+                              handleHRLeave();
+                              handleMouseLeave1();
+                            }}
+                          >
+                            <li>Performance Management</li>
+                          </Link>
+                          <Link
+                            to="/TrainingAndDevelopment"
+                            onClick={() => {
+                              handleHRLeave();
+                              handleMouseLeave1();
+                            }}
+                          >
+                            <li>Employee Training/Development</li>
+                          </Link>
+                          <Link
+                            to="/Development"
+                            onClick={() => {
+                              handleHRLeave();
+                              handleMouseLeave1();
+                            }}
+                          >
+                            <li>Organizational Development</li>
+                          </Link>
+                        </ul>
+                      </div>
+                    </li>
                   </div>
-                  <div onClick={salesmouseEnter} className="dropdown3">
-                    <div>
+                  <div
+                    onMouseEnter={handleSalesEnter}
+                    onMouseLeave={handleSalesLeave}
+                  >
+                    <li>
                       Sales and Marketing
                       <div
+                        className="list-item-content1"
                         style={
-                          salesmouse ? { display: "flex" } : { display: "none" }
+                          isSalesDropdown
+                            ? { display: "flex" }
+                            : { display: "none" }
                         }
                       >
-                        <div className="list2 dropdown-content3">
-                          <Link to="/BrandingandPositioning">
-                            <div>Branding & Position</div>
+                        <ul className="list2">
+                          <Link
+                            to="/Branding"
+                            onClick={() => {
+                              handleSalesLeave();
+                              handleMouseLeave1();
+                            }}
+                          >
+                            <li>Branding & Position</li>
                           </Link>
-                          <Link to="/MarketResearch&Analysis">
-                            <div>Market Research & Analysis</div>
+                          <Link
+                            to="/Market"
+                            onClick={() => {
+                              handleSalesLeave();
+                              handleMouseLeave1();
+                            }}
+                          >
+                            <li>Market Research & Analysis</li>
                           </Link>
-                          <Link to="/Crm">
-                            <div>CRM</div>
+                          <Link
+                            to="/Crm"
+                            onClick={() => {
+                              handleSalesLeave();
+                              handleMouseLeave1();
+                            }}
+                          >
+                            <li>CRM</li>
                           </Link>
-                          <Link to="/SalesSupport">
-                            <div>Sales Support</div>
+                          <Link
+                            to="/SalesSupport"
+                            onClick={() => {
+                              handleSalesLeave();
+                              handleMouseLeave1();
+                            }}
+                          >
+                            <li>Sales Support</li>
                           </Link>
-                        </div>
+                        </ul>
                       </div>
-                    </div>
+                    </li>
                   </div>
-                  <div onClick={digitalmouseEnter} className="dropdown3">
-                    <div>
+                  <div
+                    onMouseEnter={handleDigitalEnter}
+                    onMouseLeave={handleDigitalLeave}
+                  >
+                    <li>
                       Digital Marketing
                       <div>
-                        <Fade>
-                          <div
-                            style={
-                              digitalmouse
-                                ? { display: "flex" }
-                                : { display: "none" }
-                            }
-                          >
-                            <div className="list2 dropdown-content3">
-                              <Link to="/SearchEngine">
-                                <div>Search Engine Optimization</div>
-                              </Link>
-                              <Link to="/PayPerClickAdvertising">
-                                <div>pay Per Click Advertising</div>
-                              </Link>
-                              <Link to="/SocialMediaMarketing">
-                                <div>Social Media Marketing</div>
-                              </Link>
-                              <Link to="/E-mailMarketing">
-                                <div>E-mail Marketing</div>
-                              </Link>
-                            </div>
-                          </div>
-                        </Fade>
+                        <div
+                          className="list-item-content1"
+                          style={
+                            isDigitalDropdown
+                              ? { display: "flex" }
+                              : { display: "none" }
+                          }
+                        >
+                          <ul className="list2">
+                            <Link
+                              to="/SearchEngine"
+                              onClick={() => {
+                                handleDigitalLeave();
+                                handleMouseLeave1();
+                              }}
+                            >
+                              <li>Search Engine Optimization</li>
+                            </Link>
+                            <Link
+                              to="/Pay"
+                              onClick={() => {
+                                handleDigitalLeave();
+                                handleMouseLeave1();
+                              }}
+                            >
+                              <li>pay Per Click Advertising</li>
+                            </Link>
+                            <Link
+                              to="/Media"
+                              onClick={() => {
+                                handleDigitalLeave();
+                                handleMouseLeave1();
+                              }}
+                            >
+                              <li>Social Media Marketing</li>
+                            </Link>
+                            <Link
+                              to="/Email"
+                              onClick={() => {
+                                handleDigitalLeave();
+                                handleMouseLeave1();
+                              }}
+                            >
+                              <li>E-mail Marketing</li>
+                            </Link>
+                          </ul>
+                        </div>
                       </div>
-                    </div>
+                    </li>
                   </div>
-                </div>
+                </ul>
               </div>
             </div>
             <div>Carrers</div>
@@ -299,7 +436,7 @@ function Navbar() {
               onMouseLeave={handleMouseLeavemob}
             >
               <h3>Our Brand</h3>
-              <div
+              <ul
                 className="listMob"
                 style={
                   isDropdownVisiblemob
@@ -307,12 +444,12 @@ function Navbar() {
                     : { display: "none" }
                 }
               >
-                <div>Hitecmart</div>
-                <div>FranchiseTank</div>
-                <div>Grand havens</div>
-                <div>Job Tanks</div>
-                <div>Certon exports</div>
-              </div>
+                <li>Hitecmart</li>
+                <li>FranchiseTank</li>
+                <li>Grand havens</li>
+                <li>Job Tanks</li>
+                <li>Certon exports</li>
+              </ul>
             </div>
             <div
               onMouseEnter={handleMouseEntermob1}
@@ -346,7 +483,7 @@ function Navbar() {
                   </div>
                 </div>
                 <div onClick={hrmouseEnter}>
-                  <div>
+                  <li>
                     HR Services
                     <Fade>
                       <div
@@ -370,17 +507,17 @@ function Navbar() {
                         </div>
                       </div>
                     </Fade>
-                  </div>
+                  </li>
                 </div>
                 <div onClick={salesmouseEnter}>
-                  <div>
+                  <li>
                     Sales and Marketing
                     <div
                       style={
                         salesmouse ? { display: "flex" } : { display: "none" }
                       }
                     >
-                      <div className="list2">
+                      <ul className="list2">
                         <Link to="/Branding">
                           <div>Branding & Position</div>
                         </Link>
@@ -393,40 +530,38 @@ function Navbar() {
                         <Link to="/SalesSupport">
                           <div>Sales Support</div>
                         </Link>
-                      </div>
+                      </ul>
                     </div>
-                  </div>
+                  </li>
                 </div>
                 <div onClick={digitalmouseEnter}>
-                  <div>
+                  <li>
                     Digital Marketing
                     <div>
-                      <Fade>
-                        <div
-                          style={
-                            digitalmouse
-                              ? { display: "flex" }
-                              : { display: "none" }
-                          }
-                        >
-                          <div className="list2">
-                            <Link to="/SearchEngine">
-                              <div>Search Engine Optimization</div>
-                            </Link>
-                            <Link to="/Pay">
-                              <div>pay Per Click Advertising</div>
-                            </Link>
-                            <Link to="/Media">
-                              <div>Social Media Marketing</div>
-                            </Link>
-                            <Link to="/Email">
-                              <div>E-mail Marketing</div>
-                            </Link>
-                          </div>
-                        </div>
-                      </Fade>
+                      <div
+                        style={
+                          digitalmouse
+                            ? { display: "flex" }
+                            : { display: "none" }
+                        }
+                      >
+                        <ul className="list2">
+                          <Link to="/SearchEngine">
+                            <div>Search Engine Optimization</div>
+                          </Link>
+                          <Link to="/Pay">
+                            <div>pay Per Click Advertising</div>
+                          </Link>
+                          <Link to="/Media">
+                            <div>Social Media Marketing</div>
+                          </Link>
+                          <Link to="/Email">
+                            <div>E-mail Marketing</div>
+                          </Link>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
+                  </li>
                 </div>
               </div>
             </div>
