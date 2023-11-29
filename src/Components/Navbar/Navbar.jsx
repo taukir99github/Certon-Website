@@ -163,19 +163,19 @@ function Navbar() {
                 }
               >
                 <ul className="list">
-                  <Link to="/Hitechmart">
+                  <Link to="/Hitechmart" onClick={handleMouseLeave}>
                     <li>Hitecmart</li>
                   </Link>
-                  <Link to="/FranchiseTank">
+                  <Link to="/FranchiseTank" onClick={handleMouseLeave}>
                     <li>FranchiseTank</li>
                   </Link>
-                  <Link to="/Heaven">
+                  <Link to="/Heaven" onClick={handleMouseLeave}>
                     <li>Grand heavens</li>
                   </Link>
-                  <Link to="/Grand">
+                  <Link to="/Grand"onClick={handleMouseLeave}>
                     <li>Job Tanks</li>
                   </Link>
-                  <Link to="/Exports">
+                  <Link to="/Exports" onClick={handleMouseLeave}> 
                     <li>Certon exports</li>
                   </Link>
                 </ul>
