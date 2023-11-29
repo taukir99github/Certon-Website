@@ -1,6 +1,6 @@
-import React from 'react'
-import "./Branding.css"
-import brandinglogo from "../../Images/BrandingLogo.svg"
+import React from "react";
+import "./Branding.css";
+import brandinglogo from "../../Images/BrandingLogo.svg";
 import CustomUppersection from "../../Components/CustomComponenet/CustomUppersection";
 import OurService from "../../Components/CustomComponenet/ServiceComponents/OurService";
 import CustomContainerlower from "../../Components/CustomComponenet/CustomContainerlower";
@@ -10,7 +10,7 @@ import OneLineDiv from "../../Components/CustomComponenet/OneLine/OneLineDiv";
 const Branding = () => {
   return (
     <div>
-       <CustomUppersection
+      <CustomUppersection
         title={"   We Make a Brand Unique and Visible in the Market"}
         image={"service-image-8"}
       />
@@ -21,7 +21,7 @@ const Branding = () => {
   `}
       />
 
-<CustomContainerlower
+      <CustomContainerlower
         title={"This is What We Do"}
         imageText={[
           "Brand Strategy Development",
@@ -31,7 +31,7 @@ const Branding = () => {
         ]}
       />
 
-<CustomLowerPart
+      <CustomLowerPart
         image={"lower-image"}
         hidebutton={true}
         title={"We Know How to Brand Your Business "}
@@ -39,10 +39,11 @@ const Branding = () => {
         We design strategies for brands based on the service and the targeted audience they are focused on. This helps them to build a strong foundation for long-term success.        `}
       />
 
-      <OneLineDiv />
-
+      <OneLineDiv
+        p={`Start Building Your Future With Certon’s Branding and Positioning`}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default Branding
+export default Branding;

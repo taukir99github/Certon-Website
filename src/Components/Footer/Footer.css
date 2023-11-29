@@ -7,6 +7,10 @@
   align-items: center;
   padding: 3rem 0px;
 }
+a {
+  color: white;
+  text-decoration: none;
+}
 .footer-pt-1 {
   width: 25%;
   display: flex;
@@ -42,6 +46,10 @@
 .footer-content-head {
   font-weight: 500;
   font-size: 1.6rem;
+  color: "white";
+}
+.footer-content-head p {
+  color: "white";
 }
 .footer-text {
   display: flex;
@@ -95,6 +103,8 @@
   }
   .footer-content-head {
     font-size: 18px;
+    color: "white";
+    text-decoration: none;
   }
   .footer-content {
     width: 100%;

@@ -40,7 +40,10 @@ const WebDevelopment = () => {
         p={`As a top web development company in Bangalore, we emphasize user experience(UX) and user interface(UI) design to develop an appealing and seamless website experience.`}
       />
 
-      <OneLineDiv />
+      <OneLineDiv 
+            p={`Start Building Your Future With Certon’s Web Development Services `}
+
+      />
     </div>
   );
 };

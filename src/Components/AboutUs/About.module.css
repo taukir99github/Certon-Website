@@ -75,16 +75,16 @@
 }
 
 /* .Aboutcard1 {
-  background-image: url("../../Images/Aboutcard1.svg");
+  background-image: url("../../Images/AboutUscard1.svg");
 } */
 .Aboutcard2 {
-  background-image: url("../../Images/Aboutcard2.svg");
+  background-image: url("../../Images/AboutUscard2.svg");
 }
 .Aboutcard3 {
-  background-image: url("../../Images/Aboutcard3.svg");
+  background-image: url("../../Images/AboutUscard3.svg");
 }
 .Aboutcard4 {
-  background-image: url("../../Images/Aboutcard4.svg");
+  background-image: url("../../Images/AboutUscard4.svg");
 }
 
 .row-images {
@@ -311,7 +311,7 @@
   .paragraph {
     font-size: 15px;
   }
-  .paragraph1{
+  .paragraph1 {
     width: 100%;
     text-align: center;
   }

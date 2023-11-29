@@ -40,7 +40,11 @@ const Pay = () => {
         As Google ads experts in India, we run ads within the budget and generate high-quality leads. This helps our clients to achieve their goals within a specific time frame.        `}
       />
 
-      <OneLineDiv />
+      <OneLineDiv 
+                  p={`Start Building Your Future With Certon’s PPC Advertising Services`}
+
+      
+      />
     </div>
   )
 }

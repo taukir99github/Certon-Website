@@ -1,6 +1,6 @@
 import React from "react";
-import "./TrainingAndDevelopment.css"
-import TrainingLogo from "../../Images/TrainingLogo.svg"
+import "./TrainingAndDevelopment.css";
+import TrainingLogo from "../../Images/TrainingLogo.svg";
 import CustomUppersection from "../../Components/CustomComponenet/CustomUppersection";
 import OurService from "../../Components/CustomComponenet/ServiceComponents/OurService";
 import CustomContainerlower from "../../Components/CustomComponenet/CustomContainerlower";
@@ -8,10 +8,9 @@ import CustomLowerPart from "../../Components/CustomComponenet/CustomLowerPart";
 import OneLineDiv from "../../Components/CustomComponenet/OneLine/OneLineDiv";
 
 const TrainingAndDevelopment = () => {
-  return(
-  
-  <div>
-  <CustomUppersection
+  return (
+    <div>
+      <CustomUppersection
         title={" Our Professional Training Creates a Better Organization"}
         image={"service-image-0"}
       />
@@ -22,7 +21,7 @@ const TrainingAndDevelopment = () => {
   `}
       />
 
-<CustomContainerlower
+      <CustomContainerlower
         title={"How You Benefit ?"}
         imageText={[
           "Increase Employee Performance",
@@ -32,7 +31,7 @@ const TrainingAndDevelopment = () => {
           "Organizational Growth",
         ]}
       />
-        <CustomLowerPart
+      <CustomLowerPart
         image={"lower-image"}
         hidebutton={true}
         title={"We Guide You Properly "}
@@ -42,11 +41,11 @@ const TrainingAndDevelopment = () => {
         `}
       />
 
-      <OneLineDiv />
+      <OneLineDiv
+        p={`Start Building Your Future With Certon’s Employee Training and Development `}
+      />
     </div>
-
-  
-  )
+  );
 };
 
 export default TrainingAndDevelopment;

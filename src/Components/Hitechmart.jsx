@@ -5,21 +5,21 @@ import CustomUppersection from "./CustomComponenet/CustomUppersection";
 import CustomHeroSection from "./CustomComponenet/CustomHeroSection";
 import CustomContainerlower from "./CustomComponenet/CustomContainerlower";
 import CustomLowerPart from "./CustomComponenet/CustomLowerPart";
-import Hitech from "../Images/Hitech.svg"
-import Zoom from 'react-reveal/Zoom';
+import Hitech from "../Images/Hitech.svg";
+import Zoom from "react-reveal/Zoom";
+import hitech from "../Images/Hitech-logo.png";
 
 const About = () => {
   return (
-    <div style={{ overflow: "hidden" }}>
+    <div className="hitech" style={{ overflow: "hidden" }}>
       <CustomUppersection
-      
         title={"Quality, Service & Diversity are Assured"}
         image={"top-image"}
       />
       <CustomHeroSection
-        image={"heroSection_logo"}
-        // icon={<img src={Hitech}/>}
-        title={"Hitech Mart"}
+        // image={"heroSection_logo"}
+        imgTag={<img src={hitech} alt="" />}
+        title={"HiTec Mart"}
         p={`HiTec Mart is a wholesale B2B marketplace in India that offers a
       bulk supply of different categories of various garments and
       footwear for men, women, and kids.HiTec Mart provides all the
@@ -41,7 +41,7 @@ const About = () => {
         ]}
       />
       <CustomContainerlower
-        title={"Why Hitech Mart ?"}
+        title={"Why HiTec Mart ?"}
         imageText={[
           "Driving business growth and expansion",
           "Offer a wide range of product categories",
@@ -53,6 +53,7 @@ const About = () => {
 
       <CustomLowerPart
         image={"lower-image"}
+        route={"/AboutUs"}
         p={`  Our deep focus on collaboration, reliability, and continuous
       improvement is what truly makes HiTec Mart stand out as a leader
       in the industry. Discover the HiTec Mart difference and

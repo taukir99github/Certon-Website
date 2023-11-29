@@ -9,7 +9,7 @@ import CustomLowerPart from "./CustomComponenet/CustomLowerPart";
 
 const Heaven = () => {
   return (
-    <div style={{overflow:"hidden"}}>
+    <div style={{ overflow: "hidden" }}>
       <CustomUppersection
         title={" A Real Estate Platform for All Your Needs"}
         image={"top-image-4"}
@@ -41,10 +41,11 @@ const Heaven = () => {
         ]}
       />
 
-<CustomLowerPart
+      <CustomLowerPart
         image={"lower-image"}
         p={`Experience the Grand Heavens difference and lift your luxury property journey to new heights. Your dream gated community property awaits.
         `}
+        route={"/AboutUs"}
         button={"To Know More"}
       />
     </div>

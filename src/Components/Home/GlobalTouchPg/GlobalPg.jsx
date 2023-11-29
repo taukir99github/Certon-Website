@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./globalPg.module.css";
 import Fade from "react-reveal/Fade";
 import experiecebg from "../../../img/service/experiecebg.png";
+import { Link } from "react-router-dom";
 export const GlobalPg = () => {
   return (
     <div className={`${styles.main} shadow-inner `}>
@@ -23,7 +24,7 @@ export const GlobalPg = () => {
           assistance to maintain a long-term association with us.
         </p>
       </Fade>
-      <button className={styles.buttonglobal}> Join us Now</button>
+      {/* <button className={styles.buttonglobal}> <Link to="/Contact">Join us Now</Link></button> */}
     </div>
   );
 };

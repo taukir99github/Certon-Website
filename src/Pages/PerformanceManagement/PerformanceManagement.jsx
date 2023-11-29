@@ -21,7 +21,7 @@ const PerformanceManagement = () => {
   `}
       />
 
-<CustomContainerlower
+      <CustomContainerlower
         title={"How Do We Manage  ?"}
         imageText={[
           "Setting a Goal",
@@ -39,7 +39,9 @@ const PerformanceManagement = () => {
         `}
       />
 
-      <OneLineDiv />
+      <OneLineDiv
+        p={`Start Building Your Future With Certon’s Performance  Management `}
+      />
     </div>
   );
 };

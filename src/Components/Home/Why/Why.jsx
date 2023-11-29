@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Why.module.css";
-import Fade from 'react-reveal/Fade'
-import "./why.css"
+import Fade from "react-reveal/Fade";
+import "./why.css";
 export const Why = () => {
   const categories = [
     {
@@ -46,22 +46,21 @@ export const Why = () => {
           <section className={styles.heroSection}>
             <div className={styles.cardGrid}>
               <Fade Top>
-              {categories.map((cat) => (
-                <>
-                  {" "}
-                  <Fade Top>
-                    <div className={styles.card}>
-                      <div
-                        className={`${styles.cardBackground} ${cat.imgUrl }`}
-                        
-                      ></div>
-                      <div className={styles.cardContent}>
-                        <p className={styles.cardCategory}>{cat.cate}</p>
+                {categories.map((cat) => (
+                  <>
+                    {" "}
+                    <Fade Top>
+                      <div className={styles.card}>
+                        <div
+                          className={`${styles.cardBackground} ${cat.imgUrl}`}
+                        ></div>
+                        <div className={styles.cardContent}>
+                          <p className={styles.cardCategory}>{cat.cate}</p>
+                        </div>
                       </div>
-                    </div>
-                  </Fade>
-                </>
-              ))}
+                    </Fade>
+                  </>
+                ))}
               </Fade>
             </div>
           </section>

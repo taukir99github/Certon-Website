@@ -1,11 +1,11 @@
 import React from 'react'
 import "./OneLineDiv.css"
 
- const OneLineDiv = ({title}) => {
+ const OneLineDiv = ({p}) => {
   return (
     <div className='div-text'>
         <div className="oneline-text">
-        “Start Building Your Future With Certon’s Software Development Services”    
+          <p>{p}</p>    
         </div>  
     </div>
   )

@@ -40,7 +40,10 @@ const Crm = () => {
         At Certon, we understand the importance of an effective CRM system. Our system is designed to deliver the best services to our clients and it helps them to maintain their customers in the long term.        `}
       />
 
-      <OneLineDiv />
+      <OneLineDiv 
+                  p={`Start Building Your Future With Certon’s CRM Service `}
+
+      />
     </div>
   );
 };

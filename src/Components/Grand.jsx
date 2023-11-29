@@ -8,7 +8,7 @@ import CustomLowerPart from "./CustomComponenet/CustomLowerPart";
 
 const Grand = () => {
   return (
-    <div style={{overflow:"hidden"}}>
+    <div style={{ overflow: "hidden" }}>
       <CustomUppersection
         title={" Start Your Career with Us"}
         image={"top-image-3"}
@@ -45,6 +45,7 @@ const Grand = () => {
 
       <CustomLowerPart
         image={"lower-image"}
+        route={"/AboutUs"}
         p={`Join Job Tanks today and unlock a world of opportunities that match your expectations and potential. Your dream job is just a click away.`}
         button={"To Know More"}
       />

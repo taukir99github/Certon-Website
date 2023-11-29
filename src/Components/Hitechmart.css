@@ -105,7 +105,11 @@
   object-fit: cover;
 }
 .heroSection_logo {
-  background-image: url("../Images/Hitech.svg");
+  background-image: url("../Images/Hitech-logo.png");
+}
+.hitech img {
+  width: 190px;
+  height: 100px;
 }
 .first-card {
   background-image: url("../Images/card1.svg");

@@ -40,7 +40,10 @@ const Development = () => {
         `}
       />
 
-      <OneLineDiv />
+      <OneLineDiv
+            p={`Start Building Your Future With Certon’s Organizational Development `}
+
+      />
     </div>
   );
 };

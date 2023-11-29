@@ -74,6 +74,9 @@ export const Home = () => {
       content: "Explore Your Opportunities Now",
     },
   ];
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div style={{ overflow: "hidden" }}>
       <div className={header.category1}>
@@ -89,16 +92,17 @@ export const Home = () => {
         <Idea />
         {/* <GlobalPg /> */}
         <CustomLowerPart
+          route={"/contact"}
           title={"Experience a Global Touch"}
           p={`   We use the latest technology available in the market and keep up with industry advancements. As a top IT consulting and services company, we value our clients and serve transparent and sustainable support and assistance to maintain a long-term association with us.`}
           image={"HomeGlobalBack"}
-          button={"Join us Now"}
+          button={"Know more"}
         />
-
         <ContentHome1 />
         {/* <WhoWeAre /> */}
         <CustomLowerPart
           title={"Who We Are"}
+          route={"/AboutUs"}
           p={`   Certon Technologies is one of the top IT consulting companies in
           India, headquartered in Pune, and a corporate office in Bangalore. We
           operate with high standards of refinement and advanced technology to

@@ -29,7 +29,7 @@ export const Logoslider = () => {
                   alt="kk"
                   className={logo.jjjj2}
                   src={JOBtANK}
-                  style={{ height: 100, width: "100%" }}
+                  style={{ height: "100px", width: "100%" }}
                 />
               </Link>
             </div>
@@ -43,7 +43,11 @@ export const Logoslider = () => {
                   className={logo.jjjj1}
                   src={Ftank}
                   alt="kk"
-                  style={{ height: 120, width: "100%", borderRadius: "50%" }}
+                  style={{
+                    height: "100px",
+                    width: "100%",
+                    borderRadius: "50%",
+                  }}
                 />
               </Link>
             </div>
@@ -56,7 +60,7 @@ export const Logoslider = () => {
                   src={gHeav2}
                   className={logo.jjjj}
                   alt="kk"
-                  style={{ height: 100, width: "400px" }}
+                  style={{ height: "100px", width: "400px" }}
                 />
               </Link>
             </div>
@@ -69,7 +73,7 @@ export const Logoslider = () => {
                   src={certonExpp}
                   className={logo.kkkk1}
                   alt="hitecmart"
-                  style={{ height: 100, width: "100%" }}
+                  style={{ height: "100px", width: "100%" }}
                 />
               </Link>
             </div>
@@ -82,7 +86,7 @@ export const Logoslider = () => {
                   src={hitec}
                   alt="kk"
                   className={logo.kkkk}
-                  style={{ height: 50, width: "70%", left: "10%" }}
+                  style={{ height: "100px", width: "70%", left: "10%" }}
                 />
               </Link>{" "}
             </div>

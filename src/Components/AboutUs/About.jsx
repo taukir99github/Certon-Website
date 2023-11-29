@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./About.module.css";
+import styles from "./AboutUs.module.css";
 import CustomService from "../CustomComponenet/CustomService";
-import "./About.css";
+import "./AboutUs.css";
 import { Helmet } from "react-helmet";
 const About = () => {
   return (
@@ -9,7 +9,7 @@ const About = () => {
       <Helmet>
         <title>About - certontech.com</title>
         <meta name="description" content="Lorem ipsum dolor sit amet" />
-        <link rel="canonical" href="https://certontech.com/About" />
+        <link rel="canonical" href="https://certontech.com/AboutUs" />
       </Helmet>
       <div className={styles["hole-container"]}>
         <div className={styles["img-container"]}>
@@ -151,7 +151,7 @@ const About = () => {
               </div>
               <div>
                 <p className={styles["text"]}>
-                  Work with advanced Technologies
+                  Proper client support and assistance
                 </p>
               </div>
             </div>

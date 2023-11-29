@@ -1,6 +1,6 @@
-import React from 'react'
-import "./SearchEngine.css"
-import searchlogo from "../../Images/SeachLogo.svg"
+import React from "react";
+import "./SearchEngine.css";
+import searchlogo from "../../Images/SeachLogo.svg";
 import CustomUppersection from "../../Components/CustomComponenet/CustomUppersection";
 import OurService from "../../Components/CustomComponenet/ServiceComponents/OurService";
 import CustomContainerlower from "../../Components/CustomComponenet/CustomContainerlower";
@@ -9,8 +9,8 @@ import OneLineDiv from "../../Components/CustomComponenet/OneLine/OneLineDiv";
 
 const SearchEngine = () => {
   return (
-    <div style={{overflow:"hidden"}}>
-        <CustomUppersection
+    <div style={{ overflow: "hidden" }}>
+      <CustomUppersection
         title={" We Develop Result-Oriented SEO Strategies"}
         image={"service-image-12"}
       />
@@ -21,17 +21,17 @@ const SearchEngine = () => {
         `}
       />
 
-<CustomContainerlower
+      <CustomContainerlower
         title={"This is What We Do"}
         imageText={[
           "Website Audit and Analysis",
-          "Website Audit and Analysis",
-          "Keyword research and optimization",
+          "On-Page Optimization",
+          "Keyword Research and Optimization",
           "Content Optimization",
-          "Off-Page optimization",
+          "Off-Page Optimization",
         ]}
       />
-       <CustomLowerPart
+      <CustomLowerPart
         image={"lower-image"}
         hidebutton={true}
         title={"Rank Your Websites on the Top"}
@@ -41,9 +41,11 @@ const SearchEngine = () => {
         `}
       />
 
-      <OneLineDiv />
+      <OneLineDiv
+        p={`Start Building Your Future With Certon’s Search Engine Optimization Services`}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default SearchEngine
+export default SearchEngine;

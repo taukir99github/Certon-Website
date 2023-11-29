@@ -1,12 +1,12 @@
 .Aboutcard1 {
-    background-image: url("../../Images/Aboutcard1.jpg");
-  }
-  .Aboutcard2 {
-    background-image: url("../../Images/Aboutcard2.svg");
-  }
-  .Aboutcard3 {
-    background-image: url("../../Images/Aboutcard3.svg");
-  }
-  .Aboutcard4 {
-    background-image: url("../../Images/Aboutcard4.svg");
-  }
+  background-image: url("../../Images/AboutUscard1.jpg");
+}
+.Aboutcard2 {
+  background-image: url("../../Images/AboutUs2.jpg");
+}
+.Aboutcard3 {
+  background-image: url("../../Images/AboutUs3.jpg");
+}
+.Aboutcard4 {
+  background-image: url("../../Images/AboutUs4.jpg");
+}

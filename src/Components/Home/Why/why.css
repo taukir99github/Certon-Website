@@ -1,20 +1,26 @@
-.why1{
-    background-image: url("../../../img/service/support&Assis.jpg");
+.why1 {
+  background-image: url("../../../img/service/support&Assis.jpg");
 }
-.why2{
-    background-image: url("../../../img/service/whyBuss.jpg");
+.why2 {
+  background-image: url("../../../img/service/whyBuss.jpg");
 }
-.why3{
-    background-image: url("../../../img/service/whyCerton3.jpg");
-
+.why3 {
+  background-image: url("../../../img/service/whyCerton3.jpg");
 }
-.why4{
-    background-image: url("../../../img/service/whyCerton4.jpg");
+.why4 {
+  background-image: url("../../../img/service/whyCerton4.jpg");
+}
+.gap {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 @media (min-width: 600px) {
-    
-    .hea{
-      width: 90%;
-      padding-top: 2rem;
-    }
+  .hea {
+    width: 90%;
+    padding-top: 2rem;
   }
+  .gap{
+    text-align: center;
+  }
+}

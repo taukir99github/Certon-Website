@@ -2,9 +2,15 @@ import React from "react";
 import Zoom from "react-reveal/Zoom";
 import Bounce from "react-reveal/Bounce";
 import Fade from "react-reveal/Fade";
-import "./CustomLowerPart.css"
+import "./CustomLowerPart.css";
+import { Link, useNavigate } from "react-router-dom";
 
-const CustomLowerPart = ({ p, image, button, title, hidebutton }) => {
+const CustomLowerPart = ({ p, image, button, title, hidebutton, route }) => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate(route);
+  };
   return (
     <div>
       <div className={`service-container-lower-pt-3 ${image}`}>
@@ -19,7 +25,7 @@ const CustomLowerPart = ({ p, image, button, title, hidebutton }) => {
             {!hidebutton && (
               <div className="service-container-button">
                 <Zoom Top>
-                  <button>{button}</button>
+                  <button onClick={handleButtonClick}>{button}</button>
                 </Zoom>
               </div>
             )}

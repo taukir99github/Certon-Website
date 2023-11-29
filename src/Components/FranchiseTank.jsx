@@ -9,7 +9,7 @@ import CustomLowerPart from "./CustomComponenet/CustomLowerPart";
 
 const FranchiseTank = () => {
   return (
-    <div style={{overflow:"hidden"}}>
+    <div style={{ overflow: "hidden" }}>
       <CustomUppersection
         title={" Grow Your Brand with Franchise Tanks"}
         image={"top-image-2"}
@@ -44,6 +44,7 @@ const FranchiseTank = () => {
 
       <CustomLowerPart
         image={"lower-image"}
+        route={"/AboutUs"}
         p={`We empower businesses with the resources they need to flourish, from established brand recognition to comprehensive guidance and support. Discover the Franchise Tanks difference and transform your business journey today.
       `}
         button={"To Know More"}

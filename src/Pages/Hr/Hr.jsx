@@ -40,7 +40,11 @@ const Hr = () => {
         `}
       />
 
-      <OneLineDiv />
+      <OneLineDiv 
+      
+      p={`Start Building Your Future With Certon’s Talent Acquisition and Recruitment`}
+
+      />
     </div>
   );
 };

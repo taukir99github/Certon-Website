@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import ScrollMemory from 'react-router-scroll-memory';
+
 import Hitechmart from "./Components/Hitechmart";
 import FranchiseTank from "./Components/FranchiseTank";
 import Grand from "./Components/Grand";
@@ -23,22 +25,24 @@ import Pay from "./Pages/PayPerClickAdvertising/Pay";
 import Media from "./Pages/SocialMediaMarketing/Media";
 import Email from "./Pages/E-mailMarketing/Email";
 import CustomLowerPart from "./Components/CustomComponenet/CustomLowerPart";
-import {Navbar} from "./Components/Navbar/Navbar";
+import { Navbar } from "./Components/Navbar/Navbar";
 import { Home } from "./Components/Home/Home";
 import NewFooter from "./Components/Footer/NewFooter";
 import Faq from "./Components/FAQ/Faq";
-import About from "./Components/AboutUs/About";
 import Contact from "./Components/ContactUs/Contact";
 import Carrer from "./Components/Carrers/Carrer";
+import ScrollToTop from "./Components/ScrollToTop";
+import About from "./Components/Hitechmart";
 
 const App = () => {
   return (
     <div>
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
+          <Route path="/AboutUs" element={<About />} />
 
           <Route path="/Hitechmart" element={<Hitechmart />} />
           <Route path="/FranchiseTank" element={<FranchiseTank />} />
@@ -67,7 +71,7 @@ const App = () => {
           <Route path="/Media" element={<Media />} />
           <Route path="/Email" element={<Email />} />
           <Route path="/Faq" element={<Faq />} />
-          <Route path="/About" element={<About />} />
+          <Route path="/AboutUs" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Carrer" element={<Carrer />} />
         </Routes>

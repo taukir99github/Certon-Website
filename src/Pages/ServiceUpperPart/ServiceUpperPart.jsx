@@ -39,7 +39,8 @@ const ServiceUpperPart = () => {
         title={"Think Today and Act for Tomorrow"}
         p={`As the best software development company in India, we closely get in touch with our clients throughout the development, implementation, and testing of the software to meet the expectations of our clients.`}
       />
-      <OneLineDiv />
+      <OneLineDiv 
+      p={`Start Building Your Future With Certon’s Software Development Services`}/>
     </div>
   );
 };

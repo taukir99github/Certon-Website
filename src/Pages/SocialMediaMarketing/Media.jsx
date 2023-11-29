@@ -44,7 +44,10 @@ const Media = () => {
         `}
       />
 
-      <OneLineDiv />
+p={`Start Building Your Future With Certon’s Social Media Marketing Services `}
+<OneLineDiv 
+      
+      />
     </div>
   )
 }

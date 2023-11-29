@@ -4,6 +4,7 @@
     text-align: center;
     justify-content: center;
     background-color: aquamarine;
+    align-items: center;
 }
 .oneline-text{
 font-family: Montserrat;
@@ -12,5 +13,7 @@ font-weight: 600;
 line-height: 40px;
 letter-spacing: 3.700000047683716px;
 text-align: center;
+display: flex;
+padding: 13px 0px;
 
 }

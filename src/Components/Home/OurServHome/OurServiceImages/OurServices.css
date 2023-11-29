@@ -26,22 +26,22 @@
   height: 350px;
 }
 .OurServices-card1 {
-  background-image: url("../../../../Images/OurServiceIt.svg");
+  background-image: url("../../../../Images/service1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .OurServices-card2 {
-  background-image: url("../../../../Images/OurServicehr.svg");
+  background-image: url("../../../../Images/service2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .OurServices-card3 {
-  background-image: url("../../../../Images/OurServicessales.svg");
+  background-image: url("../../../../Images/service3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .OurServices-card4 {
-  background-image: url("../../../../Images/OurServicesdigital.svg");
+  background-image: url("../../../../Images/service4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

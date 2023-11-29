@@ -38,7 +38,10 @@ const Market = () => {
         Our industry experts use advanced technologies and the latest statistics to analyze the market and then make proper interpretations to become successful.        `}
       />
 
-      <OneLineDiv />
+      <OneLineDiv 
+                  p={`Start Building Your Future With Certon’s Market Research and Analysis`}
+
+      />
     </div>
   );
 };

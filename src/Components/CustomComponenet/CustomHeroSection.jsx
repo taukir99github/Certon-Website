@@ -3,14 +3,15 @@ import React from "react";
 import "./CustomHeroSection.css";
 import fff from "../../Images/Hitech.svg";
 import Zoom from "react-reveal/Zoom";
-import Bounce from 'react-reveal/Bounce';
+import Bounce from "react-reveal/Bounce";
 
-
-const CustomHeroSection = ({ title, p, image }) => {
+const CustomHeroSection = ({ title, p, image, imgTag }) => {
   return (
     <div className="service-container-hero">
       <div className="service-container-hero-image">
-        <div className={`hero-logo ${image}`}></div>
+        {/* {imgTag ? { imgTag } : <div className={`hero-logo ${image}`}></div>} */}
+        {imgTag || <div className={`hero-logo ${image}`}></div>}
+
       </div>
       <div className="hitech-text">
         <Zoom Top>
@@ -19,7 +20,7 @@ const CustomHeroSection = ({ title, p, image }) => {
       </div>
       <div className="service-container-hero-text">
         <Bounce Top>
-        <p>{p}</p>
+          <p>{p}</p>
         </Bounce>
       </div>
     </div>
