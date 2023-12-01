@@ -30,9 +30,10 @@
 }
 .paragraph {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 30px;
   padding: 5px 71px;
-  font-weight: 300;
+  margin-top: 1rem;
+  /* font-weight: 300; */
 }
 
 .text-1 {
@@ -124,13 +125,19 @@
 .content {
   position: relative;
   z-index: 1;
-  /* Additional styles for your content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
 }
+  /* Additional styles for your content */
+
 .row1 {
   background-image: url("https://res.cloudinary.com/dhgxxmrws/image/upload/v1700807798/media_bg-cover_1_mwfqzv.png");
   background-size: cover;
   padding: 80px;
   width: 50%;
+  
 }
 .row2 {
   background-image: url("https://res.cloudinary.com/dhgxxmrws/image/upload/v1700807662/media_bg-cover_c28nyk.png");
@@ -187,6 +194,7 @@
 }
 .hea2 {
   color: #ffffff;
+  text-align: center;
 
   font-size: 35px;
   font-style: normal;
@@ -309,7 +317,7 @@
     font-size: 24px;
   }
   .paragraph {
-    font-size: 15px;
+    font-size: 20px;
   }
   .paragraph1 {
     width: 100%;
@@ -340,7 +348,7 @@
     font-size: 58px;
   }
   .paragraph {
-    font-size: 15px;
+    font-size: 20px;
     color: #ffffff;
   }
 
@@ -376,7 +384,7 @@
     font-size: 30px;
   }
   .paragraph {
-    font-size: 15px;
+    font-size: 20px;
     color: #ffffff;
     text-align: center;
     width: 100%;
@@ -416,7 +424,7 @@
     font-size: 58px;
   }
   .paragraph {
-    font-size: 15px;
+    font-size: 20px;
     color: #ffffff;
     text-align: center;
     width: 100%;

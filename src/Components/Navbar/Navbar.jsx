@@ -26,6 +26,9 @@ function Navbar() {
   const handleResize = () => {
     setIsMobile(window.innerWidth < 600);
   };
+  const handleLinkClick = () => {
+    setmobNav(false);
+  };
 
   useEffect(() => {
     // Attach the event listener when the component mounts
@@ -150,13 +153,13 @@ function Navbar() {
               <div>Home</div>
             </Link>
             <Link to="/AboutUs">
-              <div>AboutUs</div>
+              <div>About Us</div>
             </Link>
             <div
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              Our Brand
+              Our Brands
               <div
                 style={
                   isDropdownVisible ? { display: "block" } : { display: "none" }
@@ -169,13 +172,13 @@ function Navbar() {
                   <Link to="/FranchiseTank" onClick={handleMouseLeave}>
                     <li>FranchiseTank</li>
                   </Link>
-                  <Link to="/Heaven" onClick={handleMouseLeave}>
+                  <Link to="/GrandHeaven" onClick={handleMouseLeave}>
                     <li>Grand heavens</li>
                   </Link>
-                  <Link to="/Grand"onClick={handleMouseLeave}>
+                  <Link to="/JobTanks" onClick={handleMouseLeave}>
                     <li>Job Tanks</li>
                   </Link>
-                  <Link to="/Exports" onClick={handleMouseLeave}> 
+                  <Link to="/CertonExports" onClick={handleMouseLeave}>
                     <li>Certon exports</li>
                   </Link>
                 </ul>
@@ -186,7 +189,7 @@ function Navbar() {
               onMouseEnter={handleMouseEnter1}
               onMouseLeave={handleMouseLeave1}
             >
-              Our Service
+              Our Services
               <div
                 style={
                   isDropdownVisible1
@@ -211,7 +214,7 @@ function Navbar() {
                       >
                         <ul className="list2">
                           <Link
-                            to="/ServiceUpperPart"
+                            to="/SoftwareDevelopment"
                             onClick={() => {
                               handleITLeave();
                               handleMouseLeave1();
@@ -257,7 +260,7 @@ function Navbar() {
                       >
                         <ul className="list2">
                           <Link
-                            to="/Hr"
+                            to="/TalentAcquisitionandRecruitment"
                             onClick={() => {
                               handleHRLeave();
                               handleMouseLeave1();
@@ -275,7 +278,7 @@ function Navbar() {
                             <li>Performance Management</li>
                           </Link>
                           <Link
-                            to="/TrainingAndDevelopment"
+                            to="/EmployeeTrainingandDevelopment"
                             onClick={() => {
                               handleHRLeave();
                               handleMouseLeave1();
@@ -284,7 +287,7 @@ function Navbar() {
                             <li>Employee Training/Development</li>
                           </Link>
                           <Link
-                            to="/Development"
+                            to="/OrganizationalDevelopment"
                             onClick={() => {
                               handleHRLeave();
                               handleMouseLeave1();
@@ -312,7 +315,7 @@ function Navbar() {
                       >
                         <ul className="list2">
                           <Link
-                            to="/Branding"
+                            to="/BrandingandPositioning"
                             onClick={() => {
                               handleSalesLeave();
                               handleMouseLeave1();
@@ -321,7 +324,7 @@ function Navbar() {
                             <li>Branding & Position</li>
                           </Link>
                           <Link
-                            to="/Market"
+                            to="/MarketResearch&Analysis"
                             onClick={() => {
                               handleSalesLeave();
                               handleMouseLeave1();
@@ -377,16 +380,16 @@ function Navbar() {
                               <li>Search Engine Optimization</li>
                             </Link>
                             <Link
-                              to="/Pay"
+                              to="/PayPerClickAdvertising"
                               onClick={() => {
                                 handleDigitalLeave();
                                 handleMouseLeave1();
                               }}
                             >
-                              <li>pay Per Click Advertising</li>
+                              <li>Pay Per Click Advertising</li>
                             </Link>
                             <Link
-                              to="/Media"
+                              to="/SocialMediaMarketing"
                               onClick={() => {
                                 handleDigitalLeave();
                                 handleMouseLeave1();
@@ -395,7 +398,7 @@ function Navbar() {
                               <li>Social Media Marketing</li>
                             </Link>
                             <Link
-                              to="/Email"
+                              to="/E-mailMarketing"
                               onClick={() => {
                                 handleDigitalLeave();
                                 handleMouseLeave1();
@@ -411,8 +414,12 @@ function Navbar() {
                 </ul>
               </div>
             </div>
-            <div>Carrers</div>
-            <div>Contact Us</div>
+            <Link to="/Careers">
+              <div>Careers</div>
+            </Link>
+            <Link to="/ContactUs">
+              <div>Contact Us</div>
+            </Link>
           </div>
         ) : (
           <CiViewTimeline className="toggler" onClick={handlemobNav} />
@@ -421,13 +428,13 @@ function Navbar() {
       {mobNav ? (
         <Slide top>
           <div className="mobNavbar">
-            <div>
+            <div onClick={handleLinkClick}>
               <Link to="/">
                 <div>Home</div>
               </Link>
             </div>
-            <div>
-              <Link to="/About">
+            <div onClick={handleLinkClick}>
+              <Link to="/AboutUs">
                 <div>About</div>
               </Link>
             </div>
@@ -435,7 +442,7 @@ function Navbar() {
               onMouseEnter={handleMouseEntermob}
               onMouseLeave={handleMouseLeavemob}
             >
-              <h3>Our Brand</h3>
+              <h3>Our Brands</h3>
               <ul
                 className="listMob"
                 style={
@@ -444,18 +451,28 @@ function Navbar() {
                     : { display: "none" }
                 }
               >
-                <li>Hitecmart</li>
-                <li>FranchiseTank</li>
-                <li>Grand havens</li>
-                <li>Job Tanks</li>
-                <li>Certon exports</li>
+                <Link to="/Hitechmart">
+                  <li>Hitecmart</li>
+                </Link>
+                <Link to="/FranchiseTank">
+                  <li>FranchiseTank</li>
+                </Link>
+                <Link to="/Heaven">
+                  <li>Grand heavens</li>
+                </Link>
+                <Link to="/Grand">
+                  <li>Job Tanks</li>
+                </Link>
+                <Link to="/Exports">
+                  <li>Certon exports</li>
+                </Link>
               </ul>
             </div>
             <div
               onMouseEnter={handleMouseEntermob1}
               onMouseLeave={handleMouseLeavemob1}
             >
-              <h3>Our Service</h3>
+              <h3>Our Services</h3>
               <div
                 className="listMob1"
                 style={
@@ -550,7 +567,7 @@ function Navbar() {
                             <div>Search Engine Optimization</div>
                           </Link>
                           <Link to="/Pay">
-                            <div>pay Per Click Advertising</div>
+                            <div>Pay Per Click Advertising</div>
                           </Link>
                           <Link to="/Media">
                             <div>Social Media Marketing</div>
@@ -565,6 +582,12 @@ function Navbar() {
                 </div>
               </div>
             </div>
+            <Link to="/Careers">
+              <div>Careers</div>
+            </Link>
+            <Link to="/ContactUs">
+              <div>Contact Us</div>
+            </Link>
           </div>
         </Slide>
       ) : null}

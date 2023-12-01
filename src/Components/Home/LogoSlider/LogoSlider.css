@@ -1,0 +1,45 @@
+.main-slider {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 6rem 0rem;
+}
+.main-header h2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: #183865;
+}
+.slider-logo {
+  width: 100%;
+  text-align: center;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.slider {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  /* padding-left: 1rem;
+  padding-right: 1rem; */
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  overflow: hidden;
+}
+.slider img {
+  width: 70%;
+  height: 100%;
+  object-fit: contain;
+}

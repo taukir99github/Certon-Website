@@ -36,13 +36,12 @@ const Development = () => {
         hidebutton={true}
         title={"Thrives Your Employee Performance "}
         p={`
-        At Certon, we believe that better performance comes only through proper planning and various activities. We achieve success by the blend of technology with strategies        s
+        At Certon, we believe that better performance comes only through proper planning and various activities. We achieve success by the blend of technology with strategies.
         `}
       />
 
       <OneLineDiv
-            p={`Start Building Your Future With Certon’s Organizational Development `}
-
+        p={`Start Building Your Future With Certon’s Organizational Development `}
       />
     </div>
   );

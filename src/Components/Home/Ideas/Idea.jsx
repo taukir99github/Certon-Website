@@ -26,7 +26,7 @@ export const Idea = () => {
         <Fade bottom>
           <div className={styles.box1}>
             <BiWallet className={styles.styt} />
-            <h2 className="font-bold text-white">Think the future</h2>
+            <h2 className="font-bold text-white">Think the Future</h2>
             <p className=" text-white font-thin">
               A better future <br /> awaits you
             </p>

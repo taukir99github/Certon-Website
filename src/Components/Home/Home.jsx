@@ -15,7 +15,7 @@ import { ContentHome1 } from "./ContentHome1/ContentHome1";
 import { WhoWeAre } from "./WhoWeAre/WhoWeAre";
 import { Why } from "./Why/Why";
 import { ContentHome2 } from "./ContentHome2/ContentHome2";
-import { Logoslider } from "./LogoSlider/LogoSlider";
+import Logoslider from "./LogoSlider/LogoSlider";
 import { OurServiceHome } from "./OurServHome/OurServiceHome";
 import Fade from "react-reveal/Fade";
 import CustomUppersection from "../CustomComponenet/CustomUppersection";

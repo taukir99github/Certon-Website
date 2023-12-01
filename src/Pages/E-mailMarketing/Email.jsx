@@ -11,7 +11,7 @@ const Email = () => {
   return (
     <div>
       <CustomUppersection
-        title={"  We offer You Effective Email Marketing Strategies"}
+        title={"  We Offer You Effective Email Marketing Strategies"}
         image={"service-image-15"}
       />
       <OurService
@@ -34,12 +34,12 @@ const Email = () => {
         hidebutton={true}
         title={"A Big Strategy for a Big Success"}
         p={`
-
-        We offer the best email marketing services in India, Which helps to communicate effectively with the targeted audiences. This helps brands to increase their brand awareness and reaches a broader audience.
+            We offer the best email marketing services in India, Which helps to communicate effectively with the targeted audiences. This helps brands to increase their brand awareness and reaches a broader audience.
         `}
       />
-      p={`Start Building Your Future With Certon’s E-mail Marketing Services `}
-      <OneLineDiv />
+     
+      <OneLineDiv 
+       p={`Start Building Your Future With Certon’s E-mail Marketing Services `}/>
     </div>
   );
 };

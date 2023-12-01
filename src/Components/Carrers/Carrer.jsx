@@ -2,6 +2,11 @@ import React from "react";
 import "./Carrer.css";
 import CustomUppersection from "../CustomComponenet/CustomUppersection";
 import join from "../../Images/Join.jpg";
+import openings1 from "../../Images/openings1.jpg";
+import openings2 from "../../Images/openigs2.jpg";
+import openings3 from "../../Images/openings3.jpg";
+import openings4 from "../../Images/openings4.jpg";
+import { Link } from "react-router-dom";
 
 const Carrer = () => {
   return (
@@ -52,28 +57,41 @@ const Carrer = () => {
           <h1 className="job-heading">Job Openings</h1>
           <div className="carts">
             <div className="cart1">
-              <p></p>
-
+              <img src={openings1} alt="" />
+              <div class="hover-content">
+                <p>Sales Executive</p>
+                <button>Apply</button>
+              </div>
             </div>
             <div className="cart1">
-              <p></p> 
-
+              <img src={openings2} alt="" />
+              <div class="hover-content">
+                <p>Sales Executive</p>
+                <Link to="/CarrersForm">
+                  <button>Apply</button>
+                </Link>
+              </div>
             </div>
             <div className="cart1">
-              <p></p>
-
+              <img src={openings3} alt="" />
+              <div class="hover-content">
+                <p>Sales Executive</p>
+                <Link to="/CarrersForm">
+                  <button>Apply</button>
+                </Link>
+              </div>
             </div>
             <div className="cart1">
-              <p></p>
-
+              <img src={openings4} alt="" />
+              <div class="hover-content">
+                <p>Sales Executive</p>
+                <Link to="/CarrersForm">
+                  <button>Apply</button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-
-
-
-
-
       </div>
     </>
   );

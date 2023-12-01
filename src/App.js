@@ -33,6 +33,7 @@ import Contact from "./Components/ContactUs/Contact";
 import Carrer from "./Components/Carrers/Carrer";
 import ScrollToTop from "./Components/ScrollToTop";
 import About from "./Components/AboutUs/About";
+import CarrersForm from "./Components/CareersForm/CarrersForm";
 
 const App = () => {
   return (
@@ -72,8 +73,11 @@ const App = () => {
           <Route path="/E-mailMarketing" element={<Email />} />
           <Route path="/Faq" element={<Faq />} />
           {/* <Route path="/AboutUs" element={<About />} /> */}
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Carrer" element={<Carrer />} />
+          <Route path="/ContactUs" element={<Contact />} />
+          <Route path="/Careers" element={<Carrer />} />
+          <Route path="/CarrersForm" element={<CarrersForm />} />
+          
+
         </Routes>
         <NewFooter />
       </Router>

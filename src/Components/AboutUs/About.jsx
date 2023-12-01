@@ -23,7 +23,7 @@ const About = () => {
               new world
             </p>
 
-            <div className={styles["btn"]}>
+            {/* <div className={styles["btn"]}>
               <div>
                 <button type="button" className={styles["button1"]}>
                   Get Quote Now
@@ -34,7 +34,7 @@ const About = () => {
                   Learn More
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -76,7 +76,7 @@ const About = () => {
             </p>
           </div>
           <div className={styles["row2"]}>
-            <h2 className={styles["hea2"]}>Our Mision</h2>
+            <h2 className={styles["hea2"]}>Our Mission</h2>
             <p className={styles["paragraph"]}>
               Our mission is to empower your business growth by leveraging our
               experience in the IT industry and the ever-evolving digital

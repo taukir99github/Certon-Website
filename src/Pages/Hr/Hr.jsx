@@ -11,7 +11,7 @@ const Hr = () => {
   return (
     <div style={{ overflow: "hidden" }}>
       <CustomUppersection
-        title={"Identify The Right Talents through Us"}
+        title={"Identify The Right Talents Through Us"}
         image={"service-image-4"}
       />
       <OurService
@@ -22,7 +22,7 @@ const Hr = () => {
       />
 
       <CustomContainerlower
-        title={"How We Identify the right candidates ?"}
+        title={"How We Identify the Right Candidates ?"}
         imageText={[
           "Define Job Recruitments",
           "Candidate Sourcing",
@@ -40,10 +40,8 @@ const Hr = () => {
         `}
       />
 
-      <OneLineDiv 
-      
-      p={`Start Building Your Future With Certon’s Talent Acquisition and Recruitment`}
-
+      <OneLineDiv
+        p={`Start Building Your Future With Certon’s Talent Acquisition and Recruitment`}
       />
     </div>
   );

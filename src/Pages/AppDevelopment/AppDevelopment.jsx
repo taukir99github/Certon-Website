@@ -36,7 +36,7 @@ const AppDevelopment = () => {
       <CustomLowerPart
         image={"lower-image"}
         hidebutton={true}
-        title={"Ready to Use of diverse Applications?"}
+        title={"Ready to Use of Diverse Applications?"}
         p={`Certon understands the importance of mobile applications in the current digital landscape. Our team uses sophisticated technology to develop the applications. That increases the downloads and helps to grow your business.
         `}
       />

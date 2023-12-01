@@ -1,100 +1,63 @@
-import React, { useRef } from "react";
-import logo from "./LogoSlider.module.css";
+import React from "react";
+import "./LogoSlider.css";
 import Slider from "react-infinite-logo-slider";
-import { Link } from "react-router-dom";
-import JOBtANK from "../../../img/service/JOBtANK.jpg";
-import Ftank from "../../../img/service/Ftank.png";
-import gHeav2 from "../../../img/service/gHeav2.jpg";
-import certonExpp from "../../../img/service/certonExpp.jpg";
-import hitec from "../../../img/service/hitec.jpeg";
+import slider1 from "../../../Images/slider1.png";
+import slider2 from "../../../Images/slider2.png";
+import slider3 from "../../../Images/slider3.png";
+import slider4 from "../../../Images/slider4.png";
+import slider5 from "../../../Images/slider5.png";
 
-export const Logoslider = () => {
+const LogoSlider = () => {
   return (
-    <div className={logo.container}>
-      <h2 className={logo.heading}>We Branch Out to</h2>
+    <div>
+      <div className="main-slider">
+        <div className="main-header">
+          <h2>We Branch Out to</h2>
+        </div>
+        <div className="slider-logo">
+          <Slider
+            // width="300px"
+            duration={30}
+            pauseOnHover={true}
+            blurBorders={false}
+            blurBoderColor={"#fff"}
+ 
+            style={{ gap: "3rem",  margin: "50px"}}
+          >
+            <Slider.Slide>
+              <div className="slider">
+                <img src={slider1} alt="" />
+              </div>
+            </Slider.Slide>
 
-      <div className={logo.slider}>
-        <Slider
-          width="300px"
-          duration={30}
-          pauseOnHover={true}
-          blurBorders={false}
-          blurBoderColor={"#fff"}
-        >
-          <Slider.Slide>
-            <div className={logo.slide}>
-              <Link to="https://jobtanks.in/">
-                {" "}
-                <img
-                  alt="kk"
-                  className={logo.jjjj2}
-                  src={JOBtANK}
-                  style={{ height: "100px", width: "100%" }}
-                />
-              </Link>
-            </div>
-          </Slider.Slide>
+            <Slider.Slide>
+              <div className="slider">
+                <img src={slider2} alt="" />
+              </div>
+            </Slider.Slide>
 
-          <Slider.Slide>
-            <div className={logo.slide}>
-              <Link to="https://franchisetanks.com/">
-                {" "}
-                <img
-                  className={logo.jjjj1}
-                  src={Ftank}
-                  alt="kk"
-                  style={{
-                    height: "100px",
-                    width: "100%",
-                    borderRadius: "50%",
-                  }}
-                />
-              </Link>
-            </div>
-          </Slider.Slide>
-          <Slider.Slide>
-            <div>
-              <Link to="https://grandhavens.in/">
-                {" "}
-                <img
-                  src={gHeav2}
-                  className={logo.jjjj}
-                  alt="kk"
-                  style={{ height: "100px", width: "400px" }}
-                />
-              </Link>
-            </div>
-          </Slider.Slide>
-          <Slider.Slide>
-            <div className={logo.slide}>
-              <Link to="https://certonexports.com/">
-                {" "}
-                <img
-                  src={certonExpp}
-                  className={logo.kkkk1}
-                  alt="hitecmart"
-                  style={{ height: "100px", width: "100%" }}
-                />
-              </Link>
-            </div>
-          </Slider.Slide>
-          <Slider.Slide>
-            <div className={logo.slide}>
-              <Link to="https://hitecmart.in/">
-                {" "}
-                <img
-                  src={hitec}
-                  alt="kk"
-                  className={logo.kkkk}
-                  style={{ height: "100px", width: "70%", left: "10%" }}
-                />
-              </Link>{" "}
-            </div>
-          </Slider.Slide>
-        </Slider>{" "}
+            <Slider.Slide>
+              <div className="slider">
+                <img src={slider3} alt="" />
+              </div>
+            </Slider.Slide>
+
+            <Slider.Slide>
+              <div className="slider">
+                <img src={slider4} alt="" />
+              </div>
+            </Slider.Slide>
+
+            <Slider.Slide>
+              <div className="slider">
+                <img src={slider5} alt="" />
+              </div>
+            </Slider.Slide>
+          </Slider>
+        </div>
       </div>
     </div>
   );
 };
 
-// export default Logoslider;
+export default LogoSlider;

@@ -51,7 +51,7 @@
     text-align: center;
     cursor: pointer;
     color: white;
-    font-size: 17px;
+    font-size: 20pxpx;
     font-weight: 500;
   }
   .list {
@@ -60,7 +60,7 @@
     text-decoration: none;
     position: absolute;
     z-index: 10;
-    background: rgb(131, 123, 123);
+    background: rgb(63, 58, 58);
     padding: 10px 10px;
     display: flex;
     flex-direction: column;
@@ -84,12 +84,16 @@
     text-decoration: none;
     /* position: absolute; */
     /* z-index: 10; */
-    background: rgb(122, 118, 118);
+    background: rgb(63, 58, 58);
     padding: 10px 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     border-radius: 8px;
+
+  }
+  ul li:hover{
+    color:rgb(85, 146, 146);
   }
   @media only screen and (max-width: 600px) {
     .respoNav {
