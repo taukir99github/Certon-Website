@@ -92,7 +92,7 @@ export const Home = () => {
         <Idea />
         {/* <GlobalPg /> */}
         <CustomLowerPart
-          route={"/contact"}
+          route={"/AboutUs"}
           title={"Experience a Global Touch"}
           p={`   We use the latest technology available in the market and keep up with industry advancements. As a top IT consulting and services company, we value our clients and serve transparent and sustainable support and assistance to maintain a long-term association with us.`}
           image={"HomeGlobalBack"}
@@ -102,7 +102,7 @@ export const Home = () => {
         {/* <WhoWeAre /> */}
         <CustomLowerPart
           title={"Who We Are"}
-          route={"/AboutUs"}
+          route={"/ContactUs"}
           p={`   Certon Technologies is one of the top IT consulting companies in
           India, headquartered in Pune, and a corporate office in Bangalore. We
           operate with high standards of refinement and advanced technology to

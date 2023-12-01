@@ -159,5 +159,18 @@
 @media (max-width: 768px) {
   .lower-heading {
     flex-direction: column;
+    gap: 3rem;
   }
+  .lower-heading-1{
+    width: 100%;
+  }
+  .lower-heading-2{
+    width: 100%;
+  }
+  .carts{
+    flex-direction: column;
+    width: 100%;
+    
+  }
+
 }

@@ -9,6 +9,24 @@ import openings4 from "../../Images/openings4.jpg";
 import { Link } from "react-router-dom";
 
 const Carrer = () => {
+  const jobs = [
+    {
+      title: "MERN Stack Developer",
+      img: openings1,
+    },
+    {
+      title: "HR Manager",
+      img: openings2,
+    },
+    {
+      title: "Sales Executive",
+      img: openings3,
+    },
+    {
+      title: "Product Manager",
+      img: openings4,
+    },
+  ];
   return (
     <>
       <div className="main-career">
@@ -56,14 +74,19 @@ const Carrer = () => {
         <div className="hole-container">
           <h1 className="job-heading">Job Openings</h1>
           <div className="carts">
-            <div className="cart1">
-              <img src={openings1} alt="" />
-              <div class="hover-content">
-                <p>Sales Executive</p>
-                <button>Apply</button>
+            {jobs.map((item) => (
+              <div className="cart1">
+                <img src={item.img} alt="" />
+                <div class="hover-content">
+                  <p>{item.title}</p>
+                  <Link to={`/CarrersForm/${item.title}`}>
+                    <button>Apply</button>
+                  </Link>
+                </div>
               </div>
-            </div>
-            <div className="cart1">
+            ))}
+
+            {/* <div className="cart1">
               <img src={openings2} alt="" />
               <div class="hover-content">
                 <p>Sales Executive</p>
@@ -89,7 +112,7 @@ const Carrer = () => {
                   <button>Apply</button>
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

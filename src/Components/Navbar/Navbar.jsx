@@ -29,7 +29,12 @@ function Navbar() {
   const handleLinkClick = () => {
     setmobNav(false);
   };
-
+  const handleNestedLinkClick = () => {
+    setmobNav(false);
+  };
+  const handleDropdownToggle = () => {
+    setDropdownVisiblemob(!isDropdownVisiblemob);
+  };
   useEffect(() => {
     // Attach the event listener when the component mounts
     window.addEventListener("resize", handleResize);
@@ -167,19 +172,19 @@ function Navbar() {
               >
                 <ul className="list">
                   <Link to="/Hitechmart" onClick={handleMouseLeave}>
-                    <li>Hitecmart</li>
+                    <li>HiTec Mart</li>
                   </Link>
                   <Link to="/FranchiseTank" onClick={handleMouseLeave}>
-                    <li>FranchiseTank</li>
+                    <li>Franchise Tank</li>
                   </Link>
                   <Link to="/GrandHeaven" onClick={handleMouseLeave}>
-                    <li>Grand heavens</li>
+                    <li>Grand Heavens</li>
                   </Link>
                   <Link to="/JobTanks" onClick={handleMouseLeave}>
                     <li>Job Tanks</li>
                   </Link>
                   <Link to="/CertonExports" onClick={handleMouseLeave}>
-                    <li>Certon exports</li>
+                    <li>Certon Exports</li>
                   </Link>
                 </ul>
               </div>
@@ -371,7 +376,7 @@ function Navbar() {
                         >
                           <ul className="list2">
                             <Link
-                              to="/SearchEngine"
+                              to="/SearchEngineOptimization"
                               onClick={() => {
                                 handleDigitalLeave();
                                 handleMouseLeave1();
@@ -441,6 +446,7 @@ function Navbar() {
             <div
               onMouseEnter={handleMouseEntermob}
               onMouseLeave={handleMouseLeavemob}
+              onClick={handleDropdownToggle}
             >
               <h3>Our Brands</h3>
               <ul
@@ -451,19 +457,19 @@ function Navbar() {
                     : { display: "none" }
                 }
               >
-                <Link to="/Hitechmart">
+                <Link to="/Hitechmart" onClick={handleNestedLinkClick}>
                   <li>Hitecmart</li>
                 </Link>
-                <Link to="/FranchiseTank">
+                <Link to="/FranchiseTank" onClick={handleNestedLinkClick}>
                   <li>FranchiseTank</li>
                 </Link>
-                <Link to="/Heaven">
+                <Link to="/Heaven" onClick={handleNestedLinkClick}>
                   <li>Grand heavens</li>
                 </Link>
-                <Link to="/Grand">
+                <Link to="/Grand" onClick={handleNestedLinkClick}>
                   <li>Job Tanks</li>
                 </Link>
-                <Link to="/Exports">
+                <Link to="/Exports" onClick={handleNestedLinkClick}>
                   <li>Certon exports</li>
                 </Link>
               </ul>
@@ -487,13 +493,22 @@ function Navbar() {
                     style={itmouse ? { display: "flex" } : { display: "none" }}
                   >
                     <div className="list2">
-                      <Link to="/ServiceUpperPart">
+                      <Link
+                        to="/SoftwareDevelopment"
+                        onClick={handleNestedLinkClick}
+                      >
                         <div>Software Development</div>
                       </Link>
-                      <Link to="/WebDevelopment">
+                      <Link
+                        to="/WebDevelopment"
+                        onClick={handleNestedLinkClick}
+                      >
                         <div>Web Development </div>
                       </Link>
-                      <Link to="/AppDevelopment">
+                      <Link
+                        to="/AppDevelopment"
+                        onClick={handleNestedLinkClick}
+                      >
                         <div>App Development</div>
                       </Link>
                     </div>
@@ -509,16 +524,28 @@ function Navbar() {
                         }
                       >
                         <div className="list2">
-                          <Link to="/Hr">
+                          <Link
+                            to="/TalentAcquisitionandRecruitment"
+                            onClick={handleNestedLinkClick}
+                          >
                             <div>Talent Acquisition/Recruitment</div>
                           </Link>
-                          <Link to="/PerformanceManagement">
+                          <Link
+                            to="/PerformanceManagement"
+                            onClick={handleNestedLinkClick}
+                          >
                             <div>Performance Management</div>
                           </Link>
-                          <Link to="/TrainingAndDevelopment">
+                          <Link
+                            to="/EmployeeTrainingandDevelopment"
+                            onClick={handleNestedLinkClick}
+                          >
                             <div>Employee Training/Development</div>
                           </Link>
-                          <Link to="/Development">
+                          <Link
+                            to="/OrganizationalDevelopment"
+                            onClick={handleNestedLinkClick}
+                          >
                             <div>Organizational Development</div>
                           </Link>
                         </div>
@@ -535,16 +562,25 @@ function Navbar() {
                       }
                     >
                       <ul className="list2">
-                        <Link to="/Branding">
+                        <Link
+                          to="/BrandingandPositioning"
+                          onClick={handleNestedLinkClick}
+                        >
                           <div>Branding & Position</div>
                         </Link>
-                        <Link to="/Market">
+                        <Link
+                          to="/MarketResearch&Analysis"
+                          onClick={handleNestedLinkClick}
+                        >
                           <div>Market Research & Analysis</div>
                         </Link>
-                        <Link to="/Crm">
+                        <Link to="/Crm" onClick={handleNestedLinkClick}>
                           <div>CRM</div>
                         </Link>
-                        <Link to="/SalesSupport">
+                        <Link
+                          to="/SalesSupport"
+                          onClick={handleNestedLinkClick}
+                        >
                           <div>Sales Support</div>
                         </Link>
                       </ul>
@@ -563,16 +599,28 @@ function Navbar() {
                         }
                       >
                         <ul className="list2">
-                          <Link to="/SearchEngine">
+                          <Link
+                            to="/SearchEngineOptimization"
+                            onClick={handleNestedLinkClick}
+                          >
                             <div>Search Engine Optimization</div>
                           </Link>
-                          <Link to="/Pay">
+                          <Link
+                            to="/PayPerClickAdvertising"
+                            onClick={handleNestedLinkClick}
+                          >
                             <div>Pay Per Click Advertising</div>
                           </Link>
-                          <Link to="/Media">
+                          <Link
+                            to="/SocialMediaMarketing"
+                            onClick={handleNestedLinkClick}
+                          >
                             <div>Social Media Marketing</div>
                           </Link>
-                          <Link to="/Email">
+                          <Link
+                            to="/E-mailMarketing"
+                            onClick={handleNestedLinkClick}
+                          >
                             <div>E-mail Marketing</div>
                           </Link>
                         </ul>
@@ -582,10 +630,10 @@ function Navbar() {
                 </div>
               </div>
             </div>
-            <Link to="/Careers">
+            <Link to="/Careers" onClick={handleLinkClick}>
               <div>Careers</div>
             </Link>
-            <Link to="/ContactUs">
+            <Link to="/ContactUs" onClick={handleLinkClick}>
               <div>Contact Us</div>
             </Link>
           </div>

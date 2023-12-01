@@ -1,141 +1,147 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  a {
-    text-decoration: none;
-    color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+nav {
+  font-size: 22px;
+}
+.navbar {
+  background-color: #183865;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 3rem;
+  color: white;
+}
+.mobNavbar h3 {
+  text-align: center;
+}
+.respoNav {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  color: white;
+}
+.toggler {
+  width: 40px;
+  height: 50px;
+}
+.nav-pt-1 img {
+  width: 100px;
+}
+.nav-pt-2 {
+  display: flex;
+  gap: 2.8rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+}
+.nav-pt-2 a {
+  font-size: 22px;
+}
+.list {
+  /* display: none; */
+  list-style: none;
+  text-decoration: none;
+  position: absolute;
+  z-index: 10;
+  background: rgb(63, 58, 58);
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 8px;
+}
+.list-item-content1 {
+  position: relative;
+  right: 94%;
+  top: -50%;
+  z-index: 999;
+}
+.list li {
+  height: 25px;
+}
+.mobNavbar {
+  display: none;
+}
+.list2 {
+  list-style: none;
+  text-decoration: none;
+  /* position: absolute; */
+  /* z-index: 10; */
+  background: rgb(63, 58, 58);
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 8px;
+}
+ul li:hover {
+  color: rgb(85, 146, 146);
+}
+@media only screen and (max-width: 600px) {
+  .respoNav {
+    padding: 1.5rem 1rem;
   }
   .navbar {
-    background-color: #183865;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 3rem;
-    color: white;
-  }
-  .mobNavbar h3 {
-    text-align: center;
-  }
-  .respoNav {
-    width: 100%;
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 3rem;
-    color: white;
-  }
-  .toggler {
-    width: 40px;
-    height: 50px;
-  }
-  .nav-pt-1 img {
-    width: 100px;
-  }
-  .nav-pt-2 {
-    display: flex;
-    gap: 2.8rem;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    cursor: pointer;
-    color: white;
-    font-size: 20pxpx;
-    font-weight: 500;
-  }
-  .list {
-    /* display: none; */
-    list-style: none;
-    text-decoration: none;
-    position: absolute;
-    z-index: 10;
-    background: rgb(63, 58, 58);
-    padding: 10px 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border-radius: 8px;
-  }
-  .list-item-content1 {
-    position: relative;
-    right: 94%;
-    top:-50%;
-    z-index: 999;
-  }
-  .list li{
-    height: 25px;
+    padding: 1.5rem 1rem;
   }
   .mobNavbar {
-    display: none;
-  }
-  .list2 {
-    list-style: none;
-    text-decoration: none;
-    /* position: absolute; */
-    /* z-index: 10; */
-    background: rgb(63, 58, 58);
-    padding: 10px 10px;
+    position: fixed;
+    height: auto;
+    width: 100%;
+    background-color: #183865;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 10px;
-    border-radius: 8px;
-
+    gap: 38px;
+    font-weight: bolder;
+    color: white;
+    padding: 6rem 0px 3rem 0px;
+    z-index: 9;
   }
-  ul li:hover{
-    color:rgb(85, 146, 146);
+  .listMob {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13px;
+    list-style: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px 27px;
+    background: gray;
   }
-  @media only screen and (max-width: 600px) {
-    .respoNav {
-      padding: 1.5rem 1rem;
-    }
-    .navbar {
-      padding: 1.5rem 1rem;
-    }
-    .mobNavbar {
-      position: fixed;
-      height: auto;
-      width: 100%;
-      background-color: #183865;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      gap: 38px;
-      font-weight: bolder;
-      color: white;
-      padding: 6rem 0px 3rem 0px;
-      z-index: 9;
-    }
-    .listMob {
-      height: auto;
-      flex-direction: column;
-      justify-content: center;
-      gap: 10px;
-      list-style: none;
-      border-radius: 5px;
-      text-align: center;
-      padding: 20px 0px;
-    }
-    .listMob1 {
-      height: auto;
-      flex-direction: column;
-      justify-content: center;
-      gap: 10px;
-      list-style: none;
-      border-radius: 5px;
-      text-align: center;
-      padding: 20px 0px;
-    }
+  .listMob1 {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13px;
+    list-style: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px 27px;
+    background: gray;
   }
-  
+}

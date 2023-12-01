@@ -3,11 +3,15 @@
   flex-direction: column;
   gap: 1rem;
 }
+.Star-Section h1 {
+  font-size: 34px;
+}
 .star-text {
   display: flex;
   justify-content: center;
   text-align: center;
   padding: 0px 10px;
+  font-size: 22px;
 }
 .star-star {
   width: 100%;
@@ -15,7 +19,7 @@
   justify-content: center;
 }
 .star-star img {
-  width: 60px!important;
+  width: 60px !important;
 }
 @media (max-width: 768px) {
   .image-container-text {
@@ -47,7 +51,6 @@
 
   .card-design {
     width: 90%;
-    
   }
 
   .service-container-lower-pt-2-small-card {

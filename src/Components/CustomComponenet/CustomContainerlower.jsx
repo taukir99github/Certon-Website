@@ -5,7 +5,7 @@ import Zoom from "react-reveal/Zoom";
 import Bounce from 'react-reveal/Bounce';
 const CustomContainerlower = ({ title, imageText }) => {
   return (
-    <div>
+    <div className="Star-Section">
       <div className="service-container-lower-pt-2">
         <div className="service-container-lower-pt-2-h1">
           <Zoom Top>

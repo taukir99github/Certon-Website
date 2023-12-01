@@ -130,14 +130,13 @@
   justify-content: center;
   gap: 2rem;
 }
-  /* Additional styles for your content */
+/* Additional styles for your content */
 
 .row1 {
   background-image: url("https://res.cloudinary.com/dhgxxmrws/image/upload/v1700807798/media_bg-cover_1_mwfqzv.png");
   background-size: cover;
   padding: 80px;
   width: 50%;
-  
 }
 .row2 {
   background-image: url("https://res.cloudinary.com/dhgxxmrws/image/upload/v1700807662/media_bg-cover_c28nyk.png");
@@ -424,7 +423,7 @@
     font-size: 58px;
   }
   .paragraph {
-    font-size: 20px;
+    font-size: 18px;
     color: #ffffff;
     text-align: center;
     width: 100%;

@@ -38,6 +38,7 @@
   align-items: center;
   display: flex;
   text-align: center;
+  gap: 1rem;
 }
 .service-container-lower-pt-3-text p {
   color: white !important;

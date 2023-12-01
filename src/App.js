@@ -25,7 +25,7 @@ import Pay from "./Pages/PayPerClickAdvertising/Pay";
 import Media from "./Pages/SocialMediaMarketing/Media";
 import Email from "./Pages/E-mailMarketing/Email";
 import CustomLowerPart from "./Components/CustomComponenet/CustomLowerPart";
-import  Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./Components/Navbar/Navbar";
 import { Home } from "./Components/Home/Home";
 import NewFooter from "./Components/Footer/NewFooter";
 import Faq from "./Components/FAQ/Faq";
@@ -67,7 +67,7 @@ const App = () => {
           <Route path="/MarketResearch&Analysis" element={<Market />} />
           <Route path="/Crm" element={<Crm />} />
           <Route path="/SalesSupport" element={<SalesSupport />} />
-          <Route path="/SearchEngine" element={<SearchEngine />} />
+          <Route path="/SearchEngineOptimization" element={<SearchEngine />} />
           <Route path="/PayPerClickAdvertising" element={<Pay />} />
           <Route path="/SocialMediaMarketing" element={<Media />} />
           <Route path="/E-mailMarketing" element={<Email />} />
@@ -75,9 +75,7 @@ const App = () => {
           {/* <Route path="/AboutUs" element={<About />} /> */}
           <Route path="/ContactUs" element={<Contact />} />
           <Route path="/Careers" element={<Carrer />} />
-          <Route path="/CarrersForm" element={<CarrersForm />} />
-          
-
+          <Route path="/CarrersForm/:position" element={<CarrersForm />} />
         </Routes>
         <NewFooter />
       </Router>

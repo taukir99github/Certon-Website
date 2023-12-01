@@ -21,38 +21,16 @@ const LogoSlider = () => {
             pauseOnHover={true}
             blurBorders={false}
             blurBoderColor={"#fff"}
- 
-            style={{ gap: "3rem",  margin: "50px"}}
+            style={{ gap: "3rem", margin: "50px" }}
           >
-            <Slider.Slide>
-              <div className="slider">
-                <img src={slider1} alt="" />
-              </div>
-            </Slider.Slide>
+            {[slider1, slider2, slider3, slider4, slider5].map((item) => (
+              <Slider.Slide key={item}>
+                <div className="slider">
+                  <img src={item} alt="" />
+                </div>
+              </Slider.Slide>
+            ))}
 
-            <Slider.Slide>
-              <div className="slider">
-                <img src={slider2} alt="" />
-              </div>
-            </Slider.Slide>
-
-            <Slider.Slide>
-              <div className="slider">
-                <img src={slider3} alt="" />
-              </div>
-            </Slider.Slide>
-
-            <Slider.Slide>
-              <div className="slider">
-                <img src={slider4} alt="" />
-              </div>
-            </Slider.Slide>
-
-            <Slider.Slide>
-              <div className="slider">
-                <img src={slider5} alt="" />
-              </div>
-            </Slider.Slide>
           </Slider>
         </div>
       </div>

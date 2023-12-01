@@ -93,6 +93,9 @@
     width: 100%;
     padding-top: 2rem;
   }
+  .heading{
+    margin-top: 33px;
+  }
 }
 
 @media (min-width: 960px) {
@@ -102,6 +105,9 @@
   text.hea {
     text-align: center;
     width: 90%;
+  }
+  .heading{
+    margin-top: 33px;
   }
 }
 

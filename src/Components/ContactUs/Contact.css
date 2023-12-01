@@ -107,7 +107,13 @@
   gap: 4rem;
   margin: 33px;
 }
-input {
+.upper-section input {
+  padding: 16px 30px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.lower-section input {
   padding: 16px 30px;
   border: none;
   border-radius: 5px;
@@ -122,10 +128,15 @@ textarea {
   outline: none;
   border-radius: 5px;
 }
-input::placeholder {
+.upper-section input::placeholder {
   color: black;
-  font-size: 14px;
+  font-size: 16px;
 }
+.lower-section input::placeholder {
+  color: black;
+  font-size: 16px;
+}
+
 input:focus {
   border: 2px solid #183865;
 }
