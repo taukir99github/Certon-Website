@@ -4,7 +4,7 @@ import { CiViewTimeline } from "react-icons/ci";
 import Slide from "react-reveal/Slide";
 import { Link } from "react-router-dom";
 import { Fade } from "react-reveal";
-import navlogo from "../../Images/navlogo.png";
+import navlogo from "../../Images/nav-logo.png";
 import navnew from "../../Images/Navnew.svg";
 function Navbar() {
   const [scrollPosition, setScrollPosition] = useState(0);
