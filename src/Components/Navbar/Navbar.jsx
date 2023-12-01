@@ -566,7 +566,7 @@ function Navbar() {
                           to="/BrandingandPositioning"
                           onClick={handleNestedLinkClick}
                         >
-                          <div>Branding & Position</div>
+                          <div>Branding & Positioning</div>
                         </Link>
                         <Link
                           to="/MarketResearch&Analysis"

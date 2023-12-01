@@ -6,11 +6,6 @@ import { Helmet } from "react-helmet";
 const About = () => {
   return (
     <div>
-      <Helmet>
-        <title>About - certontech.com</title>
-        <meta name="description" content="Lorem ipsum dolor sit amet" />
-        <link rel="canonical" href="https://certontech.com/About" />
-      </Helmet>
       <div className={styles["hole-container"]}>
         <div className={styles["img-container"]}>
           <div className={styles["cont1"]}>
@@ -23,18 +18,7 @@ const About = () => {
               new world
             </p>
 
-            {/* <div className={styles["btn"]}>
-              <div>
-                <button type="button" className={styles["button1"]}>
-                  Get Quote Now
-                </button>
-              </div>
-              <div>
-                <button type="button" className={styles["button2"]}>
-                  Learn More
-                </button>
-              </div>
-            </div> */}
+           
           </div>
         </div>
 
