@@ -33,6 +33,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 2rem;
 }
 .login-new {
   --background-dark: #2d3548;
@@ -81,7 +82,7 @@
   width: 100%;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 600px) {
   .login-new .cardGrid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -92,9 +93,11 @@
   .gap {
     width: 100%;
     padding-top: 2rem;
+    text-align: center;
+    justify-content: center;
   }
   .heading{
-    margin-top: 33px;
+    margin-top: 3rem;
   }
 }
 
@@ -107,7 +110,7 @@
     width: 90%;
   }
   .heading{
-    margin-top: 33px;
+    margin-top: 3rem;
   }
 }
 

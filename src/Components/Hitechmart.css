@@ -112,19 +112,19 @@
   height: 100px;
 }
 .first-card {
-  background-image: url("../Images/card1.svg");
+  background-image: url("../Images/hycard.png");
 }
 .second-card {
-  background-image: url("../Images/card2.svg");
+  background-image: url("../Images/hycard2.png");
 }
 .third-card {
-  background-image: url("../Images/card3.svg");
+  background-image: url("../Images/hycard3.png");
 }
 .fourth-card {
-  background-image: url("../Images/cardimg.svg");
+  background-image: url("../Images/hycard4.png");
 }
 .fifth-card {
-  background-image: url("../Images/cardimg2.svg");
+  background-image: url("../Images/hycard5.png");
 }
 .service-container-lower-card-2 {
   background-image: url("../Images/card2.svg");

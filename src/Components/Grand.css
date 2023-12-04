@@ -8,18 +8,17 @@
   margin-top: 4rem;
 }
 .Grandcard1 {
-    background-image: url("../Images/Grandcard1.svg");
-  }
-  .Grandcard2 {
-    background-image: url("../Images/Grandcard2.svg");
-  }
-  .Grandcard3 {
-    background-image: url("../Images/Grandcard3.svg");
-  }
-  .Grandcard4 {
-    background-image: url("../Images/Grandcard4.svg");
-  }
-  .Grandcard5 {
-    background-image: url("../Images/Grandcard5.svg");
-  }
-
+  background-image: url("../Images/job1.png");
+}
+.Grandcard2 {
+  background-image: url("../Images/job2.png");
+}
+.Grandcard3 {
+  background-image: url("../Images/job3.png");
+}
+.Grandcard4 {
+  background-image: url("../Images/job4.png");
+}
+.Grandcard5 {
+  background-image: url("../Images/job5.png");
+}

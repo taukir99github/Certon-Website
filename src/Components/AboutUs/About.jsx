@@ -5,7 +5,7 @@ import "./About.css";
 import { Helmet } from "react-helmet";
 const About = () => {
   return (
-    <div>
+    <div className="About-main">
       <div className={styles["hole-container"]}>
         <div className={styles["img-container"]}>
           <div className={styles["cont1"]}>

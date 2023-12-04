@@ -38,12 +38,17 @@ const NewFooter = () => {
           </div>
           <div className="footer-text">
             <p>Legal</p>
+            <Link to="/Term">
             <p>
               Term & <br /> Condition
             </p>
+            </Link>
+
+            <Link to="/Privacy">
             <p>
               Privacy & <br /> Policy
             </p>
+            </Link>
             <Link to="/Faq">
               <p>FAQ</p>
             </Link>

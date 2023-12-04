@@ -8,8 +8,10 @@ a {
   color: white;
 }
 nav {
-  font-size: 22px;
-  font-family: sans-serif
+  font-size: 18px !important;
+  font-family: sans-serif;
+  height: 80px;
+  text-align: center;
 }
 .navbar {
   background-color: #183865;
@@ -45,7 +47,9 @@ nav {
   height: 50px;
 }
 .nav-pt-1 img {
-  width: 190px;
+  width: 250px;
+  cursor: pointer;
+  height: 100%;
 }
 .nav-pt-2 {
   display: flex;
@@ -55,11 +59,11 @@ nav {
   text-align: center;
   cursor: pointer;
   color: white;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
 }
 .nav-pt-2 a {
-  font-size: 22px;
+  font-size: 18px;
 }
 .list {
   /* display: none; */

@@ -1,0 +1,17 @@
+.heading{
+    text-align: center;
+    color:brown;
+    font-size: 33px;
+    
+}
+.container{
+    padding:60px;
+}
+
+.text{
+    font-weight: 400;
+    font-size: 19px;
+}
+h1{
+    font-size: 30px;
+}

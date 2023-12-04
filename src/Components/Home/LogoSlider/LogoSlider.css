@@ -45,10 +45,15 @@
   height: 100%;
   object-fit: contain;
 }
-@media (min-width: 600px) {
+
+
+@media (max-width: 768px) {
   .main-slider {
     gap: 3rem;
   }
-  .main-header {
+  .main-header h2{
+    text-align: center;
+    font-size: 28px;
+    
   }
 }

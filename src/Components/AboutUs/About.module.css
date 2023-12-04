@@ -16,7 +16,6 @@
   color: #ffffff;
   font-size: 50px;
   font-weight: 800;
-
   letter-spacing: 0.2px;
 }
 .paragraph1 {
@@ -53,6 +52,7 @@
   align-items: center;
   margin-top: 4rem;
   gap: 1rem;
+  text-align: center;
 }
 .button1 {
   background-color: #5ce1e6;
@@ -75,9 +75,6 @@
   cursor: pointer;
 }
 
-/* .Aboutcard1 {
-  background-image: url("../../Images/AboutUscard1.svg");
-} */
 .Aboutcard2 {
   background-image: url("../../Images/Aboutcard2.svg");
 }
@@ -310,24 +307,26 @@
     width: 100%;
   }
   .img-container {
-    height: 100vh;
+    height: 125vh;
   }
   .heading {
     font-size: 24px;
   }
   .paragraph {
-    font-size: 20px;
+    font-size: 16px;
   }
   .paragraph1 {
     width: 100%;
     text-align: center;
   }
+  
 
   /* Adjustments for smaller screens */
   .row1,
   .row2 {
     width: 100%;
-    padding: 40px;
+    padding: 5rem 40px;
+
   }
   .row-images {
     display: flex;
@@ -340,9 +339,7 @@
   .hole-container {
     width: 100%;
   }
-  .img-container {
-    height: 100vh;
-  }
+ 
   .heading {
     font-size: 58px;
   }
@@ -362,7 +359,7 @@
     width: 50%;
   }
   .img1-container {
-    height: 100vh;
+    height: 125vh;
     padding: 80px;
     display: flex;
     flex-direction: column;
@@ -376,9 +373,7 @@
   .hole-container {
     width: 100%;
   }
-  .img-container {
-    height: 100vh;
-  }
+ 
   .heading {
     font-size: 30px;
   }
@@ -409,6 +404,9 @@
     margin-left: 3rem;
     font-weight: 500;
   }
+  .img1-container{
+    height: 125vh;
+  }
 }
 
 /* Desktop */
@@ -416,9 +414,7 @@
   .hole-container {
     width: 100%;
   }
-  .img-container {
-    height: 100vh;
-  }
+ 
   .heading {
     font-size: 58px;
   }

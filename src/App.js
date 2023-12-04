@@ -34,6 +34,8 @@ import Carrer from "./Components/Carrers/Carrer";
 import ScrollToTop from "./Components/ScrollToTop";
 import About from "./Components/AboutUs/About";
 import CarrersForm from "./Components/CareersForm/CarrersForm";
+import Term from "./Components/Footer/TermCondition/Term";
+import Privacy from "./Components/Footer/PrivacyPolicies/Privacy";
 
 const App = () => {
   return (
@@ -75,6 +77,8 @@ const App = () => {
           {/* <Route path="/AboutUs" element={<About />} /> */}
           <Route path="/ContactUs" element={<Contact />} />
           <Route path="/Careers" element={<Carrer />} />
+          <Route path="/Term" element={<Term />} />
+          <Route path="/Privacy" element={<Privacy />} />
           <Route path="/CarrersForm/:position" element={<CarrersForm />} />
         </Routes>
         <NewFooter />

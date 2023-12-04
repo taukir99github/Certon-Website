@@ -42,7 +42,7 @@
 }
 .service-container-lower-pt-3-text p {
   color: white !important;
-  font-size: 20px !important;
+  font-size: 20px;
 }
 .service-container-lower-pt-3-text h1 {
   color: white !important;
@@ -62,7 +62,7 @@
 }
 @media (max-width: 768px) {
   .image-container-text {
-    font-size: 16px;
+    font-size: 14px;
     padding: 0 15px;
   }
   .service-container-lower {
@@ -112,5 +112,15 @@
 
   .service-container-button button {
     padding: 15px 15px;
+  }
+  .service-container-lower-pt-3-image{
+
+  }
+  .service-container-lower-pt-3-text {
+
+  }
+  .service-container-lower-pt-3-text p{
+    font-size: 17px !important;
+    
   }
 }

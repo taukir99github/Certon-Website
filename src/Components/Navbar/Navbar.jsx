@@ -146,11 +146,23 @@ function Navbar() {
   }, []);
   // const screenSizeIsMobile = isMobileScreen();
 
+  const handleHomeClick = () => {
+    // Scroll to the top of the page
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    // If you don't want a smooth scroll, you can use:
+    // window.scrollTo(0, 0);
+
+    // Close the mobile navbar
+    setmobNav(false);
+  };
+
   return (
     <>
       <nav className={scrollPosition > 0 ? "navbar" : "respoNav"}>
         <div className="nav-pt-1">
-          <img src={navnew} alt="" />
+          <Link to="/" onClick={handleHomeClick}>
+            <img src={navlogo} alt="" />
+          </Link>
         </div>
         {!isMobile ? (
           <div className="nav-pt-2">
@@ -463,13 +475,13 @@ function Navbar() {
                 <Link to="/FranchiseTank" onClick={handleNestedLinkClick}>
                   <li>FranchiseTank</li>
                 </Link>
-                <Link to="/Heaven" onClick={handleNestedLinkClick}>
+                <Link to="/GrandHeaven" onClick={handleNestedLinkClick}>
                   <li>Grand heavens</li>
                 </Link>
-                <Link to="/Grand" onClick={handleNestedLinkClick}>
+                <Link to="/JobTanks" onClick={handleNestedLinkClick}>
                   <li>Job Tanks</li>
                 </Link>
-                <Link to="/Exports" onClick={handleNestedLinkClick}>
+                <Link to="/CertonExports" onClick={handleNestedLinkClick}>
                   <li>Certon exports</li>
                 </Link>
               </ul>

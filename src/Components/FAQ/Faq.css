@@ -52,6 +52,7 @@
   border-radius: 6px;
   padding: 7px 5px;
   color: white;
+  align-items:center
 }
 
 .search-icon {
@@ -65,8 +66,10 @@
 }
 
 input::placeholder {
-  font-size: 15px;
+  font-size: 18px;
   color: white;
+  margin-top: 0.5rem;
+  
 }
 
 .faq-render {
